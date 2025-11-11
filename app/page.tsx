@@ -5,7 +5,7 @@ import { Translate } from "./components/Translate";
 export default function Home() {
   return (
     <div
-    className="p-8"
+    
 
       style={{
         
@@ -17,7 +17,7 @@ export default function Home() {
         width: "100vw",
       }}
     >
-      <div className="hidden sm:block">   <Translate mode="dark" /></div>
+     
    
 
 
