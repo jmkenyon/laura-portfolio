@@ -62,7 +62,7 @@ const MobileMenu = ({ mode }: MobileMenuProps) => {
               alt="Laura Consoni Logo"
               width={150}
               height={50}
-              className="h-auto w-32"
+              className="h-auto w-32 absolute inset-0 mx-auto top-15"
               onClick={() => setIsOpen(false)}
               />
             </Link>

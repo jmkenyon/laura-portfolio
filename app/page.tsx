@@ -33,7 +33,7 @@ export default function Home() {
         {" "}
         <Translate mode="dark" />
       </div>
-      <div className="fixed top-13 w-full p-8">
+      <div className="fixed sm:top-13 top-5 w-full p-8">
         <Navbar mode="dark" />
       </div>
       <div

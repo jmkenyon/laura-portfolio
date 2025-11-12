@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="p-8">
+    <div className="px-8 py-13">
       <div className="hidden sm:block">
         {" "}
         <Translate mode="light" />

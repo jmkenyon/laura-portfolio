@@ -15,7 +15,7 @@ interface NavbarProps {
 export const Navbar = ({ mode }: NavbarProps) => {
   const { t } = useTranslation();
   return (
-    <div>
+    <div >
       <div className="text-xs ">
         <div
           className={cn(
