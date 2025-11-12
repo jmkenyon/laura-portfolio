@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <div
         onClick={scrollToNext}
-        className="cursor-pointer fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 animate-bounce text-white"
+        className="cursor-pointer fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 text-white"
       >
         <IoIosArrowDown size={24} />
       </div>
