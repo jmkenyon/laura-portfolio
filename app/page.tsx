@@ -17,7 +17,7 @@ export default function Home() {
       <div className="fixed top-13 w-full p-8">
         <Navbar mode="dark" />
       </div>
-      <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+      <div className="h-screen snap-y snap-mandatory">
         {images.map((image: string, index: number) => (
           <div
             key={index}
