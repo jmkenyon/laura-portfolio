@@ -6,8 +6,10 @@ import { IoMdClose } from "react-icons/io";
 import { useCallback, useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { Translate } from "./Translate";
+import { useTranslation } from "react-i18next";
 
 const MobileMenu = () => {
+    const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -47,13 +49,13 @@ const MobileMenu = () => {
             </div>
 
           <Link href="/sobre-mim" onClick={() => setIsOpen(false)}>
-            sobre mim
+          {t("about")}
           </Link>
           <Link href="/projetos" onClick={() => setIsOpen(false)}>
-            projetos
+          {t("projects")}
           </Link>
           <Link href="/contato" onClick={() => setIsOpen(false)}>
-            contato
+          {t("contact")}
           </Link>
           <Translate mode="light"/>
         </div>

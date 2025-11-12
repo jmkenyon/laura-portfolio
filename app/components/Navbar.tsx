@@ -6,11 +6,14 @@ import MobileMenu from "./MobileMenu";
 import { cn } from "../lib/utils";
 import Image from "next/image";
 
+import { useTranslation } from "react-i18next";
+
 interface NavbarProps {
   mode?: "light" | "dark";
 }
 
 export const Navbar = ({ mode }: NavbarProps) => {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="text-xs ">
@@ -33,9 +36,9 @@ export const Navbar = ({ mode }: NavbarProps) => {
             </Link>
           </div>
           <nav className="justify-end space-x-[46px] pb-4 text-right sm:block hidden">
-            <Link href="/sobre-mim">sobre mim</Link>
-            <Link href="/projetos">projetos</Link>
-            <Link href="/contato">contato</Link>
+            <Link href="/sobre-mim">{t("about")}</Link>
+            <Link href="/projetos">{t("projects")}</Link>
+            <Link href="/contato">{t("contact")}</Link>
           </nav>
           <MobileMenu />
         </div>
