@@ -40,7 +40,7 @@ export const Navbar = ({ mode }: NavbarProps) => {
             <Link href="/projetos">{t("projects")}</Link>
             <Link href="/contato">{t("contact")}</Link>
           </nav>
-          <MobileMenu />
+          <MobileMenu mode={mode}/>
         </div>
       </div>
     </div>
