@@ -1,7 +1,7 @@
 "use client";
 
 import i18n from "i18next";
-import { send } from "process";
+
 import { initReactI18next } from "react-i18next";
 
 const resources = {
@@ -31,7 +31,7 @@ const resources = {
   },
 };
 
-// Avoid reinitializing multiple times during hot reloads
+
 if (!i18n.isInitialized) {
   i18n.use(initReactI18next).init({
     resources,

@@ -7,6 +7,7 @@ import { useCallback, useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { Translate } from "./Translate";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 interface MobileMenuProps {
   mode?: "light" | "dark";
@@ -53,7 +54,18 @@ const MobileMenu = ({ mode }: MobileMenuProps) => {
           >
             <IoMdClose size={24} color="grey" />
           </div>
+          
 
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Laura Consoni Logo"
+              width={150}
+              height={50}
+              className="h-auto w-32"
+              onClick={() => setIsOpen(false)}
+              />
+            </Link>
           <Link href="/sobre-mim" onClick={() => setIsOpen(false)}>
             {t("about")}
           </Link>
