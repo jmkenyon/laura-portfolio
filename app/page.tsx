@@ -1,29 +1,38 @@
 import { Navbar } from "./components/Navbar";
 import { Translate } from "./components/Translate";
 
+const images: string[] = [
+  "/background-image.png",
+  "/background-image2.png",
+  "/background-image3.png",
+];
 
 export default function Home() {
   return (
-    <div
-    
-
-      style={{
-        
-        backgroundImage: `url('/background-image.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
-        width: "100vw",
-      }}
-    >
-     
-   
-
-
-
-        <Navbar />
+    <div>
+      <div className="hidden sm:block fixed z-50 right-8 top-8">
+        {" "}
+        <Translate mode="dark" />
       </div>
-
+      <div className="fixed top-13 w-full p-8">
+        <Navbar mode="dark" />
+      </div>
+      <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+        {images.map((image: string, index: number) => (
+          <div
+            key={index}
+            className="snap-start flex items-center justify-center"
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              minHeight: "100vh",
+              width: "100vw",
+            }}
+          />
+        ))}
+      </div>
+    </div>
   );
 }

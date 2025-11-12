@@ -1,11 +1,18 @@
 import React from "react";
 import { Navbar } from "../components/Navbar";
+import ContactForm from "../components/ContactForm";
+import { Translate } from "../components/Translate";
 
 const Page = () => {
   return (
-    <div>
+    <div className="p-8">
+      <div className="hidden sm:block">
+        {" "}
+        <Translate mode="light" />
+      </div>
       <Navbar />
-      <div>Contato</div>
+
+      <ContactForm />
     </div>
   );
 };
