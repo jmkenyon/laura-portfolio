@@ -37,7 +37,7 @@ export default function ContactForm() {
   >
     <h2
 
-      className="text-sm text-center py-8"
+      className="text-sm text-center py-8 text-black"
     >
       {t("sendMessage")}
     </h2>
@@ -48,8 +48,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
         <input
 
-          className="flex-1 text-black p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white
-           dark:border-white/90 "
+          className="flex-1 text-black p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
           type="text"
           placeholder={t("fullName")}
           required
