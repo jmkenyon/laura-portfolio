@@ -7,7 +7,7 @@ import { Providers } from "./components/Providers";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["200", "400", "600", "800"],
+  weight: ["200", "300"],
 });
 
 export const metadata: Metadata = {

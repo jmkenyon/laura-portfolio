@@ -12,7 +12,7 @@ const Resume = ( ) => {
                     {section.items.map((item, index) => (
                         <div key={index}>
                             
-                            {"subtitle" in item && <h3 className="font-normal text-gray-500 mt-4 text-sm">{item.subtitle}</h3>}
+                            {"subtitle" in item && <h3 className="font-light mt-4 text-sm">{item.subtitle}</h3>}
                             {item.text && (
                                 Array.isArray(item.text) ? (
                                     item.text.map((line, lineIndex) => (
