@@ -1,6 +1,6 @@
 export const cvData = [
   {
-    title: "EXPERIÊNCIAS",
+    title: "experiências",
     items: [
       {
         text: "Estágio",
@@ -14,7 +14,7 @@ export const cvData = [
     ],
   },
   {
-    title: "ACADÊMICO",
+    title: "acadêmico",
     items: [
       {
         subtitle: "Graduação em Arquitetura e Urbanismo",
@@ -64,7 +64,7 @@ export const cvData = [
     ],
   },
   {
-    title: "IDIOMAS",
+    title: "idiomas",
     items: [
       {
         text: "Português - nativo",
@@ -78,7 +78,7 @@ export const cvData = [
     ],
   },
   {
-    title: "COMPETIÇÕES",
+    title: "competições",
     items: [
       {
         text: "Participação",
@@ -92,7 +92,7 @@ export const cvData = [
     ],
   },
   {
-    title: "PUBLICAÇÕES",
+    title: "publicações",
     items: [
       {
         text: "Anais da XVIII Jornada Institucional de Iniciação Científica",
@@ -106,7 +106,7 @@ export const cvData = [
     ],
   },
   {
-    title: "SOFTWARES",
+    title: "softwares",
     items: [
       { text: "Autodesk Autocad" },
       { text: "Archicad" },

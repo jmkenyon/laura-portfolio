@@ -7,7 +7,7 @@ import { Providers } from "./components/Providers";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["200"],
+  weight: ["200", "400", "600", "800"],
 });
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className="bg-white">
+    <html lang="pt-BR" className="bg-white font-extralight">
       <body className={`${poppins.className} antialiased`}>
         <Providers>{children}</Providers>
       </body>
