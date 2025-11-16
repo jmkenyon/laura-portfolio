@@ -61,8 +61,8 @@ const ProjectPage = async ({ params }: { params: ProjectPageParams }) => {
           </div>
         </div>
 
-        <div className="flex flex-col">
-          <div className="grid lg:grid-cols-2 grids-cols-1 place-items-center gap-2">
+        <div className="flex flex-col max-w-[800px] w-full">
+          <div className="grid lg:grid-cols-2 grids-cols-1 place-items-center gap-2 pb-2">
             {project.images.gallery.map((img, index) => (
               <Image
                 key={index}
@@ -73,7 +73,7 @@ const ProjectPage = async ({ params }: { params: ProjectPageParams }) => {
               />
             ))}
           </div>
-          <div className="grid grid-cols-1 gap-2">
+          <div className="grid grid-cols-1 gap-2 place-items-center pb-2">
             {project.images.plants?.map((img, index) => (
               <Image
                 key={index}
@@ -84,13 +84,19 @@ const ProjectPage = async ({ params }: { params: ProjectPageParams }) => {
               />
             ))}
           </div>
-          <div className="grid grid-cols-1 gap-2 place-items-center">
+          <div className="grid grid-cols-1 gap-2 place-items-center pt-10">
             {project.images.secondary?.map((item, index) => (
               <Image
                 key={index}
                 src={item.src}
                 alt=""
-                width={item.size === "large" ? 800 : 400}
+                width={
+                  item.size === "large"
+                    ? 800
+                    : item.size === "small"
+                    ? 200
+                    : 400
+                }
                 height={400}
               />
             ))}

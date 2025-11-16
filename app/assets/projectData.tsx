@@ -27,7 +27,7 @@ export const projectData = [
       ],
       secondary: [
         { src: "/projects/project1/image3.png", size: "large"},
-        { src: "/projects/project1/image4.png", size: "small" },
+        { src: "/projects/project1/image4.png", size: "" },
       ],
     
     },
@@ -57,11 +57,15 @@ export const projectData = [
         "/projects/project2/image4.png",
         "/projects/project2/image5.png",
         "/projects/project2/image6.png",
-        "/projects/project2/image7.png",
+    
+      ],
+      plants: [
         "/projects/project2/image8.png",
         "/projects/project2/image9.png",
-
       ],
+      secondary:[
+        { src: "/projects/project2/image7.png", size: "small"},
+      ]
     },
   },
   {
