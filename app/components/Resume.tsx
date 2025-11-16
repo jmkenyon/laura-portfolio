@@ -1,4 +1,4 @@
-import { cvData } from "../assets/data"
+import { cvData } from "../assets/cvData"
 
 
 
