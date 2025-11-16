@@ -58,8 +58,9 @@ export const projectData = [
         "/projects/project2/image5.png",
         "/projects/project2/image6.png",
         "/projects/project2/image7.png",
-        "/projects/project2/pdf1.pdf",
-        "/projects/project2/pdf2.pdf",
+        "/projects/project2/image8.png",
+        "/projects/project2/image9.png",
+
       ],
     },
   },
@@ -86,7 +87,8 @@ export const projectData = [
         "/projects/project3/image5.png",
         "/projects/project3/image6.png",
         "/projects/project3/image7.png",
-        "/projects/project3/pdf1.pdf",
+        "/projects/project3/image8.png",
+  
       ],
     },
   },
@@ -133,10 +135,6 @@ export const projectData = [
       thumbnail: "/projects/project5/image1.png",
       gallery: [
         "/projects/project5/image1.png",
-        "/projects/project5/image2.png",
-        "/projects/project5/image3.png",
-        "/projects/project5/image4.png",
-        "/projects/project5/image5.png",
       ],
     },
   },
