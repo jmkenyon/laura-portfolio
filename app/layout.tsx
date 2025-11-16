@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     "renovação",
     "reforma",
     "arquitetura moderna",
+    "laura consoni",
   ],
   authors: [{ name: "Laura Consoni" }],
   creator: "Laura Consoni",
