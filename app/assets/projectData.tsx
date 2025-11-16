@@ -20,11 +20,16 @@ export const projectData = [
       gallery: [
         "/projects/project1/image1.png",
         "/projects/project1/image2.png",
-        "/projects/project1/image3.png",
-        "/projects/project1/image4.png",
-        "/projects/project1/pdf1.pdf",
-        "/projects/project1/pdf2.pdf",
       ],
+      plants: [
+        "/projects/project1/image5.png",
+        "/projects/project1/image6.png",
+      ],
+      secondary: [
+        { src: "/projects/project1/image3.png", size: "large"},
+        { src: "/projects/project1/image4.png", size: "small" },
+      ],
+    
     },
   },
   {
