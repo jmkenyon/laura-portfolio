@@ -12,7 +12,7 @@ const Page = () => {
     4: "md:col-span-4",
   };
   return (
-    <div className="px-8 sm:py-8 py-13 bg-white">
+    <div className="px-8 sm:py-8 py-13 bg-white text-black">
       <div className="hidden sm:block">
         {" "}
         <Translate mode="light" />
