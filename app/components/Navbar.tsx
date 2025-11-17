@@ -19,7 +19,6 @@ export const Navbar = ({ mode }: NavbarProps) => {
   const isActive = (path: string) =>
     pathname.startsWith(path) ? "text-black" : "";
 
-
   return (
     <div>
       <div className="text-xs ">
@@ -43,19 +42,28 @@ export const Navbar = ({ mode }: NavbarProps) => {
           <nav className="justify-end space-x-[46px] pb-4 text-right sm:block hidden">
             <Link
               href="/sobre-mim"
-              className={isActive("/sobre-mim")}
+              className={cn(
+                isActive("/sobre-mim"),
+                mode != "dark" && "hover:text-black"
+              )}
             >
               {t("about")}
             </Link>
             <Link
               href="/projetos"
-              className={isActive("/projetos")}
+              className={cn(
+                isActive("/projetos"),
+                mode != "dark" && "hover:text-black"
+              )}
             >
               {t("projects")}
             </Link>
             <Link
               href="/contato"
-              className={isActive("/contato")}
+              className={cn(
+                isActive("/contato"),
+                mode != "dark" && "hover:text-black"
+              )}
             >
               {t("contact")}
             </Link>

@@ -24,6 +24,7 @@ export const Translate = ({ mode }: TranslateProps) => {
           "cursor-pointer",
           isActive === "port" && mode === "dark" && "text-white",
           isActive === "port" && mode === "light" && "text-black",
+          isActive !== "port" && mode === "light" && "hover:text-black",
           isActive !== "port" && "text-gray-500"
         )}
         onClick={() => changeLang("port")}
@@ -42,6 +43,7 @@ export const Translate = ({ mode }: TranslateProps) => {
           "cursor-pointer",
           isActive === "eng" && mode === "dark" && "text-white",
           isActive === "eng" && mode === "light" && "text-black",
+          isActive !== "eng" && mode === "light" && "hover:text-black",
           isActive !== "eng" && "text-gray-500"
         )}
         onClick={() => changeLang("eng")}
