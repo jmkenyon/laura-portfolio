@@ -33,7 +33,7 @@ export default function ContactForm() {
   return (
     <div
     id="contact"
-    className="p-8"
+
   >
     <h2
 
