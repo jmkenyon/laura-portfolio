@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
-
 import "./globals.css";
 import { Providers } from "./components/Providers";
+import { Suspense } from "react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Laura Consoni" }],
   creator: "Laura Consoni",
   publisher: "Laura Consoni",
-  metadataBase: new URL("https://lauraconsoni.com"), 
+  metadataBase: new URL("https://lauraconsoni.com"),
   openGraph: {
     title: "Laura Consoni — Arquitetura e Interiores",
     description:
@@ -59,7 +59,11 @@ export const metadata: Metadata = {
   },
   category: "architecture",
 };
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="pt-BR" className="bg-white font-extralight">
       <body className={`${poppins.className} antialiased`}>

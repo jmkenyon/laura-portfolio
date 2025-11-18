@@ -10,6 +10,7 @@ interface ProjectPageParams {
 
 const ProjectPage = async ({ params }: { params: ProjectPageParams }) => {
   const resolvedParams = await params;
+
   const project = projectData.find(
     (proj) => proj.slug === resolvedParams.projectId
   );
