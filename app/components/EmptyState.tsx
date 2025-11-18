@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "../lib/utils";
 import { Navbar } from "./Navbar";
 import { Translate } from "./Translate";
 
@@ -15,7 +16,9 @@ const EmptyState: React.FC<EmptyState> = ({
   navbar = true
 }) => {
   return (
-    <div className="px-8 sm:py-8 py-13 bg-white">
+    <div className={cn(" bg-white",
+        navbar && "px-8 sm:py-8 py-13")}
+    >
       {navbar && (
         <>
           <div className="hidden sm:block">
