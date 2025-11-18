@@ -2,6 +2,7 @@ import Image from "next/image";
 import { projectData } from "../../assets/projectData";
 import { Navbar } from "@/app/components/Navbar";
 import { Translate } from "@/app/components/Translate";
+import EmptyState from "@/app/components/EmptyState";
 
 interface ProjectPageParams {
   projectId: string;
@@ -21,9 +22,11 @@ const ProjectPage = async ({ params }: { params: ProjectPageParams }) => {
           <Translate mode="light" />
         </div>
         <Navbar />
-        <div className="flex justify-center items-center p-20">
-          Project not found
-        </div>
+        <EmptyState
+          title="Projeto não encontrado"
+          subtitle="A projeto que você procura não existe ou foi removida"
+          navbar={false}
+        />
       </div>
     );
   }
