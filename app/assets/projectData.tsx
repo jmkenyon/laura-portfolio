@@ -1,23 +1,19 @@
-"use client";
-
-import { useTranslation } from "react-i18next";
 import { Project } from "../types/types";
 
 export const useProjectData = (): Project[] => {
-  const { t } = useTranslation();
   return [
     {
       title: "cabana",
       slug: "cabana",
-      projeto: t("project1_project"),
-      equipe: t("project1_team"),
+      projeto: "project1_project",
+      equipe: "project1_team",
       ano: "2022/2",
       gridSize: 1,
       description: [
-        t("project1_description1"),
-        t("project1_description2"),
-        t("project1_description3"),
-        t("project1_description4"),
+        "project1_description1",
+        "project1_description2",
+        "project1_description3",
+        "project1_description4",
       ],
       images: {
         thumbnail: "/projects/project1/image1.png",
@@ -38,15 +34,15 @@ export const useProjectData = (): Project[] => {
     {
       title: "percurso",
       slug: "percurso",
-      projeto: t("project2_project"),
-      equipe: t("project2_team"),
+      projeto: "project2_project",
+      equipe: "project2_team",
       ano: "2022/1",
       gridSize: 2,
       description: [
-        t("project2_description1"),
-        t("project2_description2"),
-        t("project2_description3"),
-        t("project2_description4"),
+        "project2_description1",
+        "project2_description2",
+        "project2_description3",
+        "project2_description4",
       ],
       images: {
         thumbnail: "/projects/project2/image1.png",
@@ -68,15 +64,15 @@ export const useProjectData = (): Project[] => {
     {
       title: "loft 6x6",
       slug: "loft_6x6",
-      projeto: t("project3_project"),
-      equipe: t("project3_team"),
+      projeto: "project3_project",
+      equipe: "project3_team",
       ano: "2021/1",
       gridSize: 1,
       description: [
-        t("project3_description1"),
-        t("project3_description2"),
-        t("project3_description3"),
-        t("project3_description4"),
+        "project3_description1",
+        "project3_description2",
+        "project3_description3",
+        "project3_description4",
       ],
       images: {
         thumbnail: "/projects/project3/image1.png",
@@ -95,14 +91,14 @@ export const useProjectData = (): Project[] => {
     {
       title: "quadra cubo",
       slug: "quadra-cubo",
-      projeto: t("project4_project"),
-      equipe: t("project4_team"),
+      projeto: "project4_project",
+      equipe: "project4_team",
       ano: "2021/1",
       gridSize: 2,
       description: [
-        t("project4_description1"),
-        t("project4_description2"),
-        t("project4_description3"),
+        "project4_description1",
+        "project4_description2",
+        "project4_description3",
       ],
       images: {
         thumbnail: "/projects/project4/image1.png",
@@ -118,15 +114,15 @@ export const useProjectData = (): Project[] => {
     {
       title: "roissypôle",
       slug: "roissypole",
-      projeto: t("project5_project"),
-      equipe: t("project5_team"),
+      projeto: "project5_project",
+      equipe: "project5_team",
       ano: "2024/1",
       gridSize: 1,
       description: [
-        t("project5_description1"),
-        t("project5_description2"),
-        t("project5_description3"),
-        t("project5_description4"),
+        "project5_description1",
+        "project5_description2",
+        "project5_description3",
+        "project5_description4",
       ],
       images: {
         thumbnail: "/projects/project5/image1.png",

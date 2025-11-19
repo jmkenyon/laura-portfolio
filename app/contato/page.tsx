@@ -1,7 +1,7 @@
 
-import { Navbar } from "../components/Navbar";
+import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
-import { Translate } from "../components/Translate";
+import Translate from "../components/Translate";
 import SocialIcons from "../components/SocialIcons";
 
 const Page = () => {

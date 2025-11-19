@@ -1,23 +1,27 @@
 "use client"
 
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
   const { t } = useTranslation();
   const [result, setResult] = useState("");
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("enviando....");
-    const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "9561feae-822a-4d1a-abe7-7b66cf150052");
+  const onSubmit = useCallback( async (event) =>  
+   {
+      event.preventDefault();
+      setResult("enviando....");
+      const formData = new FormData(event.currentTarget);
+      formData.append("access_key", "9561feae-822a-4d1a-abe7-7b66cf150052");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+        
+      });
+
 
     const data = await response.json();
 
@@ -28,7 +32,9 @@ export default function ContactForm() {
         console.log("erro", data);
         setResult(data.message);
       }
-    };
+    }, []);
+  
+  
 
   return (
     <div

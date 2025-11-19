@@ -1,5 +1,5 @@
-import { Navbar } from "../components/Navbar";
-import { Translate } from "../components/Translate";
+import Navbar from "../components/Navbar";
+import Translate from "../components/Translate";
 
 import ProjectCard from "../components/ProjectCard";
 

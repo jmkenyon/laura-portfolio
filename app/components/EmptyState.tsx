@@ -1,8 +1,9 @@
 "use client";
 
+import { memo } from "react";
 import { cn } from "../lib/utils";
-import { Navbar } from "./Navbar";
-import { Translate } from "./Translate";
+import  Navbar from "./Navbar";
+import Translate from "./Translate";
 
 interface EmptyState {
   title?: string;
@@ -47,4 +48,4 @@ const EmptyState: React.FC<EmptyState> = ({
   );
 };
 
-export default EmptyState;
+export default memo(EmptyState);

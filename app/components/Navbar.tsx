@@ -8,12 +8,13 @@ import Image from "next/image";
 
 import { useTranslation } from "react-i18next";
 import { usePathname } from "next/navigation";
+import { memo } from "react";
 
 interface NavbarProps {
   mode?: "light" | "dark";
 }
 
-export const Navbar = ({ mode }: NavbarProps) => {
+const Navbar = ({ mode }: NavbarProps) => {
   const { t } = useTranslation();
   const pathname = usePathname();
   const isActive = (path: string) =>
@@ -74,3 +75,5 @@ export const Navbar = ({ mode }: NavbarProps) => {
     </div>
   );
 };
+
+export default memo(Navbar);

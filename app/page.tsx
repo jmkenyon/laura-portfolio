@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef } from "react";
-import { Navbar } from "./components/Navbar";
-import { Translate } from "./components/Translate";
+import Navbar  from "./components/Navbar";
+import Translate from "./components/Translate";
 import { IoIosArrowDown } from "react-icons/io";
 
 const images: string[] = [

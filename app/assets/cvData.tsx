@@ -1,75 +1,68 @@
-"use client";
-
-import { useTranslation } from "react-i18next";
-
 export const useCvData = () => {
-  const { t } = useTranslation();
-
   return [
     {
-      title: t("experiences"),
+      title: "experiences",
       items: [
-        { text: t("experience1_title") },
-        { text: t("experience1_company") },
-        { text: t("experience1_role") },
+        { text: "experience1_title" },
+        { text: "experience1_company" },
+        { text: "experience1_role" },
       ],
     },
     {
-      title: t("academic"),
+      title: "academic",
       items: [
         {
-          subtitle: t("academic1_title"),
-          text: [t("academic1_institution"), t("academic1_years")],
+          subtitle: "academic1_title",
+          text: ["academic1_institution", "academic1_years"],
         },
         {
-          subtitle: t("academic2_title"),
-          text: [t("academic2_subtitle"), t("academic2_years")],
-        },
-  
-        {
-          subtitle: t("academic4_title"),
-          text: [t("academic4_subtitle"), t("academic4_years")],
+          subtitle: "academic2_title",
+          text: ["academic2_subtitle", "academic2_years"],
         },
         {
-          subtitle: t("academic5_title"),
-          text: [t("academic5_subtitle"), t("academic5_years")],
+          subtitle: "academic4_title",
+          text: ["academic4_subtitle", "academic4_years"],
         },
         {
-          subtitle: t("academic6_title"),
-          text: [t("academic6_institution"), t("academic6_years")],
+          subtitle: "academic5_title",
+          text: ["academic5_subtitle", "academic5_years"],
         },
         {
-          subtitle: t("academic7_title"),
+          subtitle: "academic6_title",
+          text: ["academic6_institution", "academic6_years"],
+        },
+        {
+          subtitle: "academic7_title",
           text: [
-            t("academic7_subtitle"),
-            t("academic7_institution"),
-            t("academic7_years"),
+            "academic7_subtitle",
+            "academic7_institution",
+            "academic7_years",
           ],
         },
       ],
     },
     {
-      title: t("languages"),
+      title: "languages",
       items: [
-        { text: t("language_portuguese") },
-        { text: t("language_english") },
-        { text: t("language_french") },
+        { text: "language_portuguese" },
+        { text: "language_english" },
+        { text: "language_french" },
       ],
     },
     {
-      title: t("competitions"),
+      title: "competitions",
       items: [
-        { text: t("competition1_title") },
-        { text: t("competition1_event") },
-        { text: t("competition1_year") },
+        { text: "competition1_title" },
+        { text: "competition1_event" },
+        { text: "competition1_year" },
       ],
     },
     {
-      title: t("publications"),
+      title: "publications",
       items: [
-        { subtitle: t("publication1_title") },
-        { text: t("publication1_subtitle") },
-        { text: t("publication1_year") },
+        { subtitle: "publication1_title" },
+        { text: "publication1_subtitle" },
+        { text: "publication1_year" },
       ],
     },
     {

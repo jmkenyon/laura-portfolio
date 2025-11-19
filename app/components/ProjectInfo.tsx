@@ -31,24 +31,24 @@ const ProjectInfo = ({project}: ProjectInfoProps) => {
       <div className="flex flex-col gap-4">
         <h1>
           <div className="font-semibold text-gray-500">{t("title")}</div>
-          <div>{project.title}</div>
+          <div>{t(project.title)}</div>
         </h1>
         <h4>
           <div className="font-semibold text-gray-500">{t("project")}</div>
-          <div>{project.projeto}</div>
+          <div>{t(project.projeto)}</div>
         </h4>
         <h4>
           <div className="font-semibold text-gray-500">{t("team")}</div>
-          <div>{project.equipe}</div>
+          <div>{t(project.equipe)}</div>
         </h4>
         <h4>
           <div className="font-semibold text-gray-500">{t("year")}</div>
-          <div>{project.ano}</div>
+          <div>{t(project.ano)}</div>
         </h4>
         <div className="md:max-w-xs max-w-md">
-          {project.description.map((desc, index) => (
+          {(project.description).map((desc, index) => (
             <p className="py-3" key={index}>
-              {desc}
+              {t(desc)}
             </p>
           ))}
         </div>
@@ -71,7 +71,7 @@ const ProjectInfo = ({project}: ProjectInfoProps) => {
             <Image
               key={index}
               src={img}
-              alt={`${project.title} ${index + 1}`}
+              alt={`${t(project.title)} ${index + 1}`}
               height={400}
               width={800}
             />

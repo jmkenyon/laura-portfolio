@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { memo } from "react";
 import { cn } from "../lib/utils";
 import { useTranslation } from "react-i18next";
 
@@ -8,9 +8,11 @@ interface TranslateProps {
   mode: "light" | "dark";
 }
 
-export const Translate = ({ mode }: TranslateProps) => {
+const Translate = ({ mode }: TranslateProps) => {
   const { i18n } = useTranslation();
-  const [isActive, setIsActive] = React.useState(i18n.language === "pt-BR" ? "port" : "eng");
+  const [isActive, setIsActive] = React.useState(
+    i18n.language === "pt-BR" ? "port" : "eng"
+  );
 
   const changeLang = (lang: "port" | "eng") => {
     setIsActive(lang);
@@ -34,7 +36,10 @@ export const Translate = ({ mode }: TranslateProps) => {
       </div>
 
       <div
-        className={cn(mode === "dark" && "text-white", mode === "light" && "text-black")}
+        className={cn(
+          mode === "dark" && "text-white",
+          mode === "light" && "text-black"
+        )}
       >
         {" / "}
       </div>
@@ -55,3 +60,5 @@ export const Translate = ({ mode }: TranslateProps) => {
     </div>
   );
 };
+
+export default memo(Translate);

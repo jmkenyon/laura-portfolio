@@ -3,9 +3,9 @@
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 
-import { useCallback, useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useState, useRef, memo } from "react";
 import Link from "next/link";
-import { Translate } from "./Translate";
+import Translate from "./Translate";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
@@ -82,4 +82,5 @@ const MobileMenu = ({ mode }: MobileMenuProps) => {
   );
 };
 
-export default MobileMenu;
+export default memo(MobileMenu)
+
