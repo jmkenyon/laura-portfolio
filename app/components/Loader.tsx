@@ -11,6 +11,7 @@ const Loader = () => {
                 flex-col
                 justify-center
                 items-center
+                bg-white
             "
         >
             <PuffLoader 
