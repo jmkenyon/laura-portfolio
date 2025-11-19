@@ -51,7 +51,6 @@ const resources = {
         "“Requalification of Ruins: an analysis based on restoration theories and case studies”",
       academic2_years: "2021/2 - 2022/1",
 
-
       academic4_title:
         "III International Symposium on Science, Technology and Innovation",
       academic4_subtitle: "Lecture given on the research conducted on ruins",
@@ -81,6 +80,62 @@ const resources = {
       publication1_subtitle:
         "“Requalification of Ruins: an analysis based on restoration theories and case studies”",
       publication1_year: "2022/2",
+      title: "title",
+      project: "project",
+      team: "team",
+      year: "year",
+      project1_project: "competition",
+      project1_team: "individual",
+      project1_description1:
+        "The Tiny House movement gained strength worldwide, driven by the need for adaptable housing that captured the interest of homeowners. Considering these factors, the Tiny House project was designed as an off-grid system, functioning without urban infrastructure.",
+      project1_description2:
+        "With this in mind, the site was chosen for its isolation, further emphasizing the absence of human resources. Located in the Scottish Highlands, “The Lake House” has 25 m² and is based on a cozy concept, with open access to the surrounding landscape, making the environment part of the architecture.",
+      project1_description3:
+        "Inside the house, oak wood was primarily used, bringing warmth to the space and maintaining natural materials.",
+      project1_description4:
+        "The system that operates the house is located in a small area at the back of the cabin. Inside are the rainwater harvesting system, the water heating system, and the plumbing equipment. The house is managed by three different compartments that make up the wastewater system: the fresh water tank, the gray water tank, and the energy supplied by solar panels.",
+
+      project2_project: "academic - u. presbiteriana mackenzie",
+      project2_team: "individual",
+      project2_description1:
+        "The project adopted the movement of waves and how they behave in the presence of wind as its design concept. Located on a mountainous site with a stream crossing through it, the pathway is structurally composed of 17 modules measuring 5.85m x 6.20m, totaling a 100m-long walkway with 6m of interior width.",
+      project2_description2:
+        "For its construction, glued laminated timber (GLT) was used, a structural material produced by bonding individual wood segments with industrial adhesives, as well as concrete for the foundation pillar measuring 1.20m x 2.80m in diameter. Finally, metal components were used for all connections, from 8mm-thick steel plates to steel cables fastening the frames together.",
+      project2_description3:
+        "The structure is composed of wooden slats measuring 0.25m x 0.10m which, when connected, form frames that imitate the movement of the water surface below the project. This composition allows light to enter, creating an impressive play of light and shadow on the floor.",
+      project2_description4:
+        "Thus, this pathway becomes a place for staying and contemplating nature, rather than simply a route whose sole purpose is crossing. The goal was to create a space for reflection and awareness of how it integrates with its surroundings.",
+
+      project3_project: "academic - u. presbiteriana mackenzie",
+      project3_team: "individual",
+      project3_description1:
+        "Based on the creation of the Quadra Cubo, 6m x 6m lofts were developed to form its composition. The units were built with a metal structure and drywall walls supported by a steel frame.",
+      project3_description2:
+        "The layout was designed with the comfort and well-being of future residents in mind.",
+      project3_description3:
+        "Designed to accommodate a maximum of three people, the loft has a spacious ground floor integrating the living room and kitchen, optimizing the available area.",
+      project3_description4:
+        "On the second level, the mezzanine was designed with a main double bed and another single bed embedded in the closet, allowing flexible use depending on each family's needs.",
+
+      project4_project: "academic - u. presbiteriana mackenzie",
+      project4_team: "individual",
+      project4_description1:
+        "The project is based on the creation of a mixed-use space (commercial + residential), welcoming and relaxed, promoting comfort and interaction among residents and visitors.",
+      project4_description2:
+        "Situated within a 100m x 100m block, the proposal began with the division into 16 modules of approximately 18m x 18m, all sharing the same structural base.",
+      project4_description3:
+        "Within each division, the cubes (lofts and shops) were arranged organically, creating a free-form layout that stimulates the creativity of residents and the surrounding community.",
+
+      project5_project: "academic - ensap val-de-seine",
+      project5_team: "ana julia maciel and laura consoni",
+      project5_description1:
+        "RoissyPole is a multifunctional complex at Charles de Gaulle Airport in Paris, offering a wide range of services and conveniences for travelers and aviation professionals. With hotels, offices, shops, restaurants, and conference centers, RoissyPole serves millions of passengers annually, functioning as an important economic and logistical hub.",
+      project5_description2:
+        "In addition to its services, RoissyPole is highly accessible due to its integration with Paris' public transportation system, including high-speed trains (TGV), the RER, and buses, ensuring easy access to the city center and other regions.",
+      project5_description3:
+        "Our project aims to improve the interaction between passengers, station employees, and complex workers by providing a better-equipped and better-organized space. The reorganization of the CDGVAL transport system facilitates circulation, while the new layout of the station's internal equipment creates an intuitive flow for visitors.",
+      project5_description4:
+        "Furthermore, the creation of aluminum and canvas modules, inspired by the original mushroom-shaped pillars, connects the station to the bus terminal. We activated the southern zone by extending the canopy, transforming an obsolete area into a gastronomic space with improved connection to the exterior. Finally, the central area becomes more inviting, offering various facilities for sales, waiting, and information.",
     },
   },
   "pt-BR": {
@@ -124,7 +179,6 @@ const resources = {
         "“Requalificação de Ruínas: uma análise apartir das teorias de restauro e estudos de caso”",
       academic2_years: "2021/2 - 2022/1",
 
-  
       academic4_title:
         "III Simpósio Internacional de Ciência, Tecnologia e Inovação",
       academic4_subtitle:
@@ -155,6 +209,66 @@ const resources = {
       publication1_subtitle:
         "“Requalificação de Ruínas: uma análise apartir das teorias de restauro e estudos de caso”",
       publication1_year: "2022/2",
+      title: "título",
+      project: "projeto",
+      team: "equipe",
+      year: "ano",
+
+      project1_project: "competição",
+      project1_team: "individual",
+      project1_description1:
+        "O movimento Tiny House ganhou força em todo o mundo, com o surgimento da necessidade de uma casa adaptável que despertou o interesse dos proprietários. Considerando esses fatores, o projeto da Tiny House foi feito para ser um sistema off-grid, mantendo o uso sem infraestrutura urbana.",
+      project1_description2:
+        "Pensando nisso, o local foi escolhido considerando seu isolamento, acentuando ainda mais a falta de recursos humanos. Localizada nas Terras Altas da Escócia, “The Lake House” tem 25 m² e se baseia em um conceito acolhedor, com acesso aberto ao paisagismo, tornando o ambiente parte da arquitetura.",
+      project1_description3:
+        "No interior da casa, foi usada principalmente a madeira de carvalho, trazendo aconchego ao espaço e mantendo os materiais naturais.",
+      project1_description4:
+        "O sistema que comanda a casa fica em uma pequena área na parte de trás da cabine. Dentro do espaço fica o sistema de captação de chuva, aquecimento de água e os equipamentos de plumbing. A casa é gerida por três compartimentos diferentes que constituem o 'esgoto': o tanque de água doce, o tanque de águas cinzas e a energia é fornecida por painéis solares.",
+
+      project2_project: "acadêmico - u. presbiteriana mackenzie",
+      project2_team: "individual",
+      project2_description1:
+        "O projeto tomou como partido a movimentação das ondas e como elas se comportam na presença dos ventos. Localizado em um terreno montanhoso, com a passagem de um riacho transitando em seu curso, o percurso é composto estruturalmente por 17 módulos de 5.85m x 6.20m, totalizando uma passarela de 100m de comprimento e 6m de espaço interno de largura.",
+      project2_description2:
+        "Para sua formação, foi utilizada a madeira laminada colada (MLC), que é um material estrutural fabricado através da união de segmentos individuais de madeira colados com adesivos industriais, e o concreto para o pilar de fundação de 1.20m x 2.80m de diâmetro. Por fim, para todas as conexões, foram utilizadas peças metálicas, desde chapas de 8mm de espessura até cabos de aço para a fixação dos pórticos entre si.",
+      project2_description3:
+        "A obra é composta por ripas de madeira de 0.25m x 0.10m que, quando conectadas, formam pórticos que imitam o movimento da superfície da água situada abaixo do projeto. Assim, sua composição permite a entrada de luz, formando um incrível jogo de luz e sombra no piso.",
+      project2_description4:
+        "Dessa forma, este percurso seria um espaço de permanência e contemplação da natureza, e não somente um trajeto cujo único intuito é a travessia. O objetivo foi a criação de um espaço de reflexão e de percepção de como ele se integra ao seu meio.",
+
+      project3_project: "acadêmico - u. presbiteriana mackenzie",
+      project3_team: "individual",
+      project3_description1:
+        "A partir da criação da Quadra Cubo, lofts de 6m x 6m foram criados para construir sua composição. As unidades foram feitas por uma estrutura metálica e suas paredes, de drywall sustentadas pelo Steel Frame.",
+      project3_description2:
+        "A disposição do layout foi pensada visando o conforto e o bem-estar das pessoas que ali irão residir.",
+      project3_description3:
+        "Planejada para acolher no máximo 3 pessoas, o loft conta com um amplo espaço disponível no térreo que integra a sala e a cozinha para uma otimização do espaço disponível.",
+      project3_description4:
+        "Já no segundo nível do loft, o mezanino foi projetado com uma cama principal de casal e outra de solteiro embutida no armário, sendo a decisão de sua utilização de acordo com a necessidade de cada família.",
+
+      project4_project: "acadêmico - u. presbiteriana mackenzie",
+      project4_team: "individual",
+      project4_description1:
+        "O projeto tem como partido a criação de um espaço misto (comercial + residencial), acolhedor e descontraído, que promova o conforto e o convívio entre os moradores e visitantes do local.",
+      project4_description2:
+        "Situado em uma quadra de 100m x 100m, a proposta partiu da divisão em 16 módulos, de aproximadamente 18m x 18m, com a estrutura base igual para todos.",
+      project4_description3:
+        "Dentro de cada divisão foi espacializado os cubos (lofts e lojas) de forma orgânica, de modo a criar um desenho livre que estimula a criatividade dos moradores do local e seus arredores.",
+
+      project5_project: "acadêmico - ensap val-de-seine",
+      project5_team: "ana julia maciel e laura consoni",
+      project5_description1:
+        "RoissyPôle é um complexo multifuncional no Aeroporto Charles de Gaulle, em Paris, oferecendo uma ampla gama de serviços e conveniências para viajantes e profissionais da aviação. Com hotéis, escritórios, lojas, restaurantes e centros de conferências, o RoissyPôle atende milhões de passageiros anualmente, funcionando como um importante centro econômico e logístico. Sua localização estratégica dentro do principal aeroporto da França facilita negócios e parcerias internacionais em um ambiente globalizado.",
+
+      project5_description2:
+        "Além de seus serviços, o RoissyPôle é altamente acessível devido à sua integração com o sistema de transporte público de Paris, incluindo trens de alta velocidade (TGV), RER e ônibus, garantindo fácil acesso ao centro da cidade e outras regiões. Essa conectividade melhora a experiência para visitantes e profissionais, fazendo do RoissyPôle uma parte vital do Aeroporto Charles de Gaulle e contribuindo para sua posição como um dos principais centros de aviação do mundo.",
+
+      project5_description3:
+        "Nosso projeto visa aprimorar a interação entre passageiros, funcionários da estação e trabalhadores do complexo, proporcionando um espaço melhor equipado e organizado. A reorganização do sistema de transporte CDGVAL facilita a circulação, enquanto a nova disposição dos equipamentos internos da estação cria um fluxo intuitivo para novos visitantes.",
+
+      project5_description4:
+        "Além disso, a criação de módulos de alumínio e lona, inspirados nos pilares originais em forma de cogumelo, conecta a estação ao terminal de ônibus. Ativamos a zona sul do projeto estendendo a cobertura, transformando uma área obsoleta em um espaço gastronômico com melhor conectividade com o exterior. Por fim, a área central torna-se mais convidativa, apresentando diversas instalações de venda, espera e informação.",
     },
   },
 };

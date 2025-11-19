@@ -1,4 +1,6 @@
-import { projectData } from "../assets/projectData";
+"use client"
+
+import { useProjectData } from "../assets/projectData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +11,7 @@ const ProjectCard = () => {
         3: "md:col-span-3",
         4: "md:col-span-4",
       };
+    const projectData = useProjectData();
   return (
     <div className="grid md:grid-cols-4 sm:grid-cols-2  grid-cols-1 pt-10">
         {projectData.map((project) => (
