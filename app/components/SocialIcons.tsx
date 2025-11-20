@@ -10,14 +10,14 @@ const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <PiInstagramLogoThin size={24} />
+        <PiInstagramLogoThin size={24} color="black" />
       </Link>
       <Link
         href={"https://www.linkedin.com/in/lauraconsoni/"}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <PiLinkedinLogoThin size={24} />
+        <PiLinkedinLogoThin size={24}  color="black"/>
       </Link>
     </div>
   );
