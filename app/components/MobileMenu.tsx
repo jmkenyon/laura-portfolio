@@ -3,7 +3,7 @@
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 
-import { useCallback, useEffect, useState, useRef, memo } from "react";
+import {  useEffect, useState, useRef, memo } from "react";
 import Link from "next/link";
 import Translate from "./Translate";
 import { useTranslation } from "react-i18next";
@@ -18,9 +18,7 @@ const MobileMenu = ({ mode }: MobileMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const toggleOpen = useCallback(() => {
-    setIsOpen((value) => !value);
-  }, []);
+  const toggleOpen = () => setIsOpen(value => !value);
 
   useEffect(() => {
     if (!isOpen) return;
