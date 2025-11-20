@@ -7,21 +7,21 @@ import Link from "next/link";
 
 const ProjectCard = () => {
     const colSpanMap: Record<number, string> = {
-        1: "md:col-span-1",
-        2: "md:col-span-2",
-        3: "md:col-span-3",
-        4: "md:col-span-4",
+        1: "lg:col-span-1",
+        2: "lg:col-span-2",
+        3: "lg:col-span-3",
+        4: "lg:col-span-4",
       };
     const projectData = useProjectData();
   return (
-    <div className="grid md:grid-cols-4 sm:grid-cols-2  grid-cols-1 pt-10">
+    <div className="grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 pt-10">
         {projectData.map((project) => (
           <div
             key={project.slug}
             className={`${colSpanMap[project.gridSize]} col-span-1 p-1`}
           >
             <Link href={`/projetos/${project.slug}`}>
-              <div className="relative group w-full h-[300px]">
+              <div className="relative group w-full 3xl:h-[450px] 2xl:h-[400px] h-[300px]">
                 <Image
                   src={project.images.thumbnail}
                   alt={project.title}
@@ -41,7 +41,7 @@ const ProjectCard = () => {
 
                     "
                 >
-                  <div className="hidden sm:flex flex-col gap-1">
+                  <div className="hidden md:flex flex-col gap-1">
                     <p>{project.title}</p>
                     <hr />
                     <p className="text-xs text-center">{project.ano}</p>
@@ -49,7 +49,7 @@ const ProjectCard = () => {
                 </div>
               </div>
             </Link>
-            <div className="pt-3 pb-10 sm:hidden flex flex-col justify-start ">
+            <div className="pt-3 pb-10 md:hidden flex flex-col justify-start ">
               <p >{project.title}</p>
               <hr />
               <p className="text-xs pt-1">{project.ano}</p>

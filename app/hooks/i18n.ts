@@ -60,7 +60,7 @@ const resources = {
       academic5_subtitle: "Course taught in English",
       academic5_years: "2023/1",
 
-      academic6_title: "Continuous Flow Program - Exchange",
+      academic6_title: "Fluxo Contínuo Program - Exchange",
       academic6_institution: "ENSAP Val-de-Seine, Paris - France",
       academic6_years: "2023/2 - 2024/1",
 

@@ -14,13 +14,13 @@ const Page = () => {
         <Translate mode="light" />
       </div>
       <Navbar />
-      <div className="flex sm:flex-row flex-col">
+      <div className="flex md:flex-row flex-col">
         <Image
           src="/laura-about.jpg"
           alt="Laura"
           width={350}
           height={600}
-          className="lg:ml-30 md:ml-14 sm:ml:8 mt-18  xlg:h-[500px] lg:h-[450px] h-[400px]  w-auto object-cover"
+          className="lg:ml-30 md:ml-14 sm:ml:8 mt-18 3xl:h-[700px] 2xl:h-[600px] xlg:h-[500px] lg:h-[450px] h-[400px]  w-auto object-cover"
         />
         <AboutSection />
       </div>
