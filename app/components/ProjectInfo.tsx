@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import { cn } from "../lib/utils";
 
 interface ProjectInfoProps {
   project: {
@@ -88,10 +89,16 @@ const ProjectInfo = ({project}: ProjectInfoProps) => {
               src={item.src}
               alt=""
               width={
-                item.size === "large" ? 800 : item.size === "small" ? 200 : 400
+                item.size === "large" ? 800 : item.size === "small" ? 200 : 300
               }
               height={400}
-              className="md:w-[300px]"
+              className={cn(
+                item.size === "medium" && "lg:w-[400px] md:w-[200px]",
+                item.size === "large"  && "lg:w-[800px] md:w-[400px]",
+                item.size === "small" && "lg:w-[200px] md:w-[100px]"
+         
+
+              )}
             />
           ))}
         </div>
