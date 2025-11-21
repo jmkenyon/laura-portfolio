@@ -4,7 +4,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./components/Providers";
 
-
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["200", "300"],
@@ -67,7 +66,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="bg-white font-extralight">
       <body className={`${poppins.className} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );
