@@ -16,18 +16,18 @@ export const useProjectData = (): Project[] => {
         "project1_description4",
       ],
       images: {
-        thumbnail: "/projects/project1/image1.png",
+        thumbnail: "/projects/project1/image1.jpg",
         gallery: [
-          "/projects/project1/image1.png",
-          "/projects/project1/image2.png",
+          "/projects/project1/image1.jpg",
+          "/projects/project1/image2.jpg",
         ],
         plants: [
           "/projects/project1/image5.png",
           "/projects/project1/image6.png",
         ],
         secondary: [
-          { src: "/projects/project1/image3.png", size: "large" },
-          { src: "/projects/project1/image4.png", size: "medium" },
+          { src: "/projects/project1/image3.jpg", size: "large" },
+          { src: "/projects/project1/image4.jpg", size: "medium" },
         ],
       },
     },
@@ -45,14 +45,14 @@ export const useProjectData = (): Project[] => {
         "project2_description4",
       ],
       images: {
-        thumbnail: "/projects/project2/image1.png",
+        thumbnail: "/projects/project2/image1.jpg",
         gallery: [
-          "/projects/project2/image1.png",
-          "/projects/project2/image2.png",
-          "/projects/project2/image3.png",
-          "/projects/project2/image4.png",
-          "/projects/project2/image5.png",
-          "/projects/project2/image6.png",
+          "/projects/project2/image1.jpg",
+          "/projects/project2/image2.jpg",
+          "/projects/project2/image3.jpg",
+          "/projects/project2/image4.jpg",
+          "/projects/project2/image5.jpg",
+          "/projects/project2/image6.jpg",
         ],
         plants: [
           "/projects/project2/image8.png",
@@ -75,13 +75,13 @@ export const useProjectData = (): Project[] => {
         "project3_description4",
       ],
       images: {
-        thumbnail: "/projects/project3/image1.png",
+        thumbnail: "/projects/project3/image1.jpg",
         gallery: [
-          "/projects/project3/image1.png",
-          "/projects/project3/image2.png",
-          "/projects/project3/image3.png",
-          "/projects/project3/image4.png",
-          "/projects/project3/image5.png",
+          "/projects/project3/image1.jpg",
+          "/projects/project3/image2.jpg",
+          "/projects/project3/image3.jpg",
+          "/projects/project3/image4.jpg",
+          "/projects/project3/image5.jpg",
         ],
         plants: [
           "/projects/project3/image6.png",
@@ -103,13 +103,13 @@ export const useProjectData = (): Project[] => {
         "project4_description3",
       ],
       images: {
-        thumbnail: "/projects/project4/image1.png",
+        thumbnail: "/projects/project4/image1.jpg",
         gallery: [
-          "/projects/project4/image1.png",
-          "/projects/project4/image2.png",
-          "/projects/project4/image3.png",
-          "/projects/project4/image4.png",
-          "/projects/project4/image5.png",
+          "/projects/project4/image1.jpg",
+          "/projects/project4/image2.jpg",
+          "/projects/project4/image3.jpg",
+          "/projects/project4/image4.jpg",
+          "/projects/project4/image5.jpg",
         ],
       },
     },
@@ -127,8 +127,8 @@ export const useProjectData = (): Project[] => {
         "project5_description4",
       ],
       images: {
-        thumbnail: "/projects/project5/image1.png",
-        gallery: ["/projects/project5/image1.png"],
+        thumbnail: "/projects/project5/image1.jpg",
+        gallery: ["/projects/project5/image1.jpg"],
       },
     },
   ];

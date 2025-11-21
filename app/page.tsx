@@ -6,9 +6,9 @@ import Translate from "./components/Translate";
 import { IoIosArrowDown } from "react-icons/io";
 
 const images: string[] = [
-  "/background-image.png",
-  "/background-image2.png",
-  "/background-image3.png",
+  "/background-image.jpg",
+  "/background-image2.jpg",
+  "/background-image3.jpg",
 ];
 
 export default function Home() {
