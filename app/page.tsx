@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div>
       <div className="hidden sm:block fixed z-50 right-8 top-8">
-        {" "}
+        {"  "}
         <Translate mode="dark" />
       </div>
       <div className="fixed sm:top-13 top-5 w-full p-8">
