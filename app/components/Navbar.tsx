@@ -37,6 +37,8 @@ const Navbar = ({ mode }: NavbarProps) => {
                 width={120}
                 height={40}
                 className="h-auto sm:w-40 w-32"
+                priority
+                fetchPriority="high"
               />
             </Link>
           </div>
