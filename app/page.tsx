@@ -1,17 +1,26 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Navbar  from "./components/Navbar";
 import Translate from "./components/Translate";
 import { IoIosArrowDown } from "react-icons/io";
 
-const images: string[] = [
-  "/background-image.png",
-  "/background-image2.png",
-  "/background-image3.png",
-];
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 640); // sm breakpoint
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
+  const images = isMobile
+  ? ["/background-image-mobile.jpg", "/background-image2-mobile.jpg", "/background-image3-mobile.jpg"]
+  : ["/background-image.png", "/background-image2.png", "/background-image3.png"];
+
   const sectionRefs = useRef<HTMLDivElement[]>([]);
 
   const scrollToNext = () => {
