@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     images: [
       {
-        url: "/laura-about.jpg",
+        url: "/laura-about.webp",
         width: 1200,
         height: 630,
         alt: "Projeto de Arquitetura por Laura Consoni",
