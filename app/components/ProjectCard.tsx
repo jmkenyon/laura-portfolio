@@ -33,7 +33,7 @@ const ProjectCard = () => {
                   className="
                       absolute inset-0 
                       flex items-center justify-center
-                      bg-black/40
+                      bg-black/65
                       text-white text-xl font-medium
                       opacity-0 group-hover:opacity-100
                       transition-opacity duration-300
