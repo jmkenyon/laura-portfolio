@@ -17,7 +17,7 @@ const Page = () => {
       <div className="flex md:flex-row flex-col">
         <Image
           src="/laura-about.webp"
-          alt="Laura"
+          alt="Laura about photo"
           width={350}
           height={600}
           className="lg:ml-30 md:ml-14 sm:ml:8 mt-18 3xl:h-[700px] 2xl:h-[600px] xlg:h-[500px] lg:h-[450px] h-[400px]  w-auto object-cover"

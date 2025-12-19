@@ -89,6 +89,7 @@ export const useProjectData = (): Project[] => {
           "/projects/project3/image8.png",
         ]
       },
+      embreve: true,
     },
     {
       title: "quadra cubo",
@@ -112,6 +113,7 @@ export const useProjectData = (): Project[] => {
           "/projects/project4/image5.jpg",
         ],
       },
+      embreve: true,
     },
     {
       title: "roissypôle",
@@ -130,6 +132,7 @@ export const useProjectData = (): Project[] => {
         thumbnail: "/projects/project5/image1.jpg",
         gallery: ["/projects/project5/image1.jpg"],
       },
+      embreve: true,
     },
   ];
 };

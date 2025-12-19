@@ -15,4 +15,5 @@ export type Project = {
       size: "small" | "medium" | "large"; 
     }[];
   };
+  embreve?: boolean
 };

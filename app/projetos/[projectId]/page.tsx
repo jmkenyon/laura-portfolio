@@ -35,6 +35,24 @@ const ProjectPage = () => {
       </div>
     );
   }
+
+  if (project.embreve) {
+    return (
+      <div className="px-8 sm:py-8 py-13 bg-white">
+      <div className="hidden sm:block">
+        {" "}
+        <Translate mode="light" />
+      </div>
+      <Navbar />
+      <EmptyState
+        title="em breve"
+        subtitle="conteúdo em desenvolvimento"
+        navbar={false}
+      />
+    </div>
+    )
+  }
+
   return (
     <div className="px-8 sm:py-8 py-13 bg-white text-sm text-black">
       <div className="hidden sm:block">
