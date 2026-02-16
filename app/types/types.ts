@@ -12,7 +12,7 @@ export type Project = {
     plants?: string[];
     secondary?: {
       src: string;
-      size: "small" | "medium" | "large"; 
+      size: "small" | "medium" | "large" | "xl"; 
     }[];
   };
   embreve?: boolean

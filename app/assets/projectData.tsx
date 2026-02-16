@@ -81,15 +81,18 @@ export const useProjectData = (): Project[] => {
           "/projects/project3/image2.jpg",
           "/projects/project3/image3.jpg",
           "/projects/project3/image4.jpg",
-          "/projects/project3/image5.jpg",
+
         ],
         plants: [
-          "/projects/project3/image6.png",
-          "/projects/project3/image7.png",
-          "/projects/project3/image8.png",
+          "/projects/project3/image9.png",
+          "/projects/project3/image10.png",
+         
+        ],
+        secondary: [
+          {src: "/projects/project3/image12.png", size: "large"},
         ]
       },
-      embreve: true,
+
     },
     {
       title: "quadra cubo",
