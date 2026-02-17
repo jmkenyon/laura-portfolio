@@ -75,12 +75,12 @@ export const useProjectData = (): Project[] => {
         "project3_description4",
       ],
       images: {
-        thumbnail: "/projects/project3/image1.jpg",
+        thumbnail: "/projects/project3/image13.png",
         gallery: [
-          "/projects/project3/image1.jpg",
-          "/projects/project3/image2.jpg",
-          "/projects/project3/image3.jpg",
-          "/projects/project3/image4.jpg",
+          "/projects/project3/image13.png",
+          "/projects/project3/image14.png",
+          "/projects/project3/image15.png",
+          "/projects/project3/image16.png",
 
         ],
         plants: [
@@ -107,16 +107,24 @@ export const useProjectData = (): Project[] => {
         "project4_description3",
       ],
       images: {
-        thumbnail: "/projects/project4/image1.jpg",
+        thumbnail: "/projects/project4/image11.png",
         gallery: [
-          "/projects/project4/image1.jpg",
-          "/projects/project4/image2.jpg",
-          "/projects/project4/image3.jpg",
-          "/projects/project4/image4.jpg",
-          "/projects/project4/image5.jpg",
+          "/projects/project4/image6.png",
+
         ],
+        doublePlants: 
+        [
+
+          "/projects/project4/image9.png",
+          "/projects/project4/image10.png",
+          "/projects/project4/image11.png",
+          "/projects/project4/image12.png",
+
+          "/projects/project4/image7.png",
+          "/projects/project4/image8.png",
+        ]
       },
-      embreve: true,
+
     },
     {
       title: "roissypôle",
@@ -131,11 +139,25 @@ export const useProjectData = (): Project[] => {
         "project5_description3",
         "project5_description4",
       ],
+      padding: "pt-20",
       images: {
-        thumbnail: "/projects/project5/image1.jpg",
-        gallery: ["/projects/project5/image1.jpg"],
+        thumbnail: "/projects/project5/image7.png",
+        gallery: 
+        [
+          "/projects/project5/image7.png",
+
+        ],
+        plants: [
+          "/projects/project5/image2.png",
+          "/projects/project5/image10.png",
+          "/projects/project5/image11.png",
+        ],
+        doublePlants : [
+          "/projects/project5/image8.png",
+          "/projects/project5/image9.png",
+        ]
       },
-      embreve: true,
+
     },
   ];
 };

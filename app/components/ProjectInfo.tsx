@@ -13,6 +13,7 @@ interface ProjectInfoProps {
     ano: string;
     gridSize: number;
     description: string[];
+    padding?: string;
     images: {
       thumbnail?: string;
       gallery: string[];
@@ -21,6 +22,7 @@ interface ProjectInfoProps {
         src: string;
         size: "small" | "medium" | "large" | "xl";
       }[];
+      doublePlants?: string[];
     };
   };
 }
@@ -67,46 +69,76 @@ const ProjectInfo = ({ project }: ProjectInfoProps) => {
                 src={img}
                 alt={`${project.title} ${index + 1}`}
                 height={700}
-                width={700}
+                width={isLast && isOdd ? 1000 : 700}
                 className={cn(
                   !isLast && "3xl:w-[500px] md:w-[400px]",
-                  isLast && isOdd && "lg:col-span-2 justify-self-center w-[300px]"
+                  isLast && isOdd && "lg:col-span-2  "
                 )}
               />
             );
           })}
         </div>
-        <div className="grid grid-cols-1 gap-2 place-items-center pb-2">
-          {project.images.plants?.map((img, index) => (
-            <Image
-              key={index}
-              src={img}
-              alt={`${t(project.title)} ${index + 1}`}
-              height={400}
-              width={1000}
-              className="lg:w-[1000px] md:w-[400px]"
-            />
-          ))}
-        </div>
-        <div className="grid grid-cols-1 gap-2 place-items-center pt-10">
-          {project.images.secondary?.map((item, index) => (
-            <Image
-              key={index}
-              src={item.src}
-              alt=""
-              width={
-                item.size === "large" ? 800 : item.size === "small" ? 200 : item.size === "medium" ? 400 : 1200
-              }
-              height={400}
-              className={cn(
-                item.size === "small" && "lg:w-[200px] md:w-[100px]",
-                item.size === "medium" && "lg:w-[400px] md:w-[200px]",
-                item.size === "large" && "lg:w-[800px] md:w-[400px]",
-                item.size === "xl" && "lg:w-[1200px] md:w-[600px]"
-       
-              )}
-            />
-          ))}
+        {project.images.plants && (
+          <div
+            className={cn(
+              "grid grid-cols-1 gap-2 place-items-center pb-2 ",
+              project.padding && project.padding
+            )}
+          >
+            {project.images.plants?.map((img, index) => (
+              <Image
+                key={index}
+                src={img}
+                alt={`${t(project.title)} ${index + 1}`}
+                height={400}
+                width={1000}
+                className="lg:w-[1000px] md:w-[400px]"
+              />
+            ))}
+          </div>
+        )}
+        {project.images.secondary && (
+          <div className="grid grid-cols-1 gap-2 place-items-center pt-10">
+            {project.images.secondary?.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                alt=""
+                width={
+                  item.size === "large"
+                    ? 800
+                    : item.size === "small"
+                    ? 200
+                    : item.size === "medium"
+                    ? 400
+                    : 1200
+                }
+                height={400}
+                className={cn(
+                  item.size === "small" && "lg:w-[200px] md:w-[100px]",
+                  item.size === "medium" && "lg:w-[400px] md:w-[200px]",
+                  item.size === "large" && "lg:w-[800px] md:w-[400px]",
+                  item.size === "xl" && "lg:w-[1200px] md:w-[600px]"
+                )}
+              />
+            ))}
+          </div>
+        )}
+
+        <div className="grid lg:grid-cols-2 grid-cols-1  gap-2 pb-2">
+          {project.images.doublePlants &&
+            project.images.doublePlants.map((img, index) => {
+              return (
+                <Image
+                  key={index}
+                  src={img}
+                  alt={`${project.title} ${index + 1}`}
+                  height={700}
+                  width={700}
+                  className="3xl:w-[500px] md:w-[400px]"
+                />
+              );
+            })}
         </div>
       </div>
     </div>

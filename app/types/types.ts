@@ -6,6 +6,7 @@ export type Project = {
   ano: string;
   gridSize: number; 
   description: string[];
+  padding?: string
   images: {
     thumbnail: string;
     gallery: string[];
@@ -14,6 +15,7 @@ export type Project = {
       src: string;
       size: "small" | "medium" | "large" | "xl"; 
     }[];
+    doublePlants?: string[]
   };
   embreve?: boolean
 };
