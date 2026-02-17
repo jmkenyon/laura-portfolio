@@ -136,7 +136,10 @@ const resources = {
         "Our project aims to improve the interaction between passengers, station employees, and complex workers by providing a better-equipped and better-organized space. The reorganization of the CDGVAL transport system facilitates circulation, while the new layout of the station's internal equipment creates an intuitive flow for visitors.",
       project5_description4:
         "Furthermore, the creation of aluminum and canvas modules, inspired by the original mushroom-shaped pillars, connects the station to the bus terminal. We activated the southern zone by extending the canopy, transforming an obsolete area into a gastronomic space with improved connection to the exterior. Finally, the central area becomes more inviting, offering various facilities for sales, waiting, and information.",
+      success: "email sent",
+      sending: "sending..."
     },
+
   },
   "pt-BR": {
     translation: {
@@ -269,6 +272,8 @@ const resources = {
 
       project5_description4:
         "Além disso, a criação de módulos de alumínio e lona, inspirados nos pilares originais em forma de cogumelo, conecta a estação ao terminal de ônibus. Ativamos a zona sul do projeto estendendo a cobertura, transformando uma área obsoleta em um espaço gastronômico com melhor conectividade com o exterior. Por fim, a área central torna-se mais convidativa, apresentando diversas instalações de venda, espera e informação.",
+      success: "email enviado",
+      sending: "enviando..."
     },
   },
 };

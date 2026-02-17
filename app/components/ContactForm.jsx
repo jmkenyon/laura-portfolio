@@ -11,7 +11,7 @@ export default function ContactForm() {
   const onSubmit = useCallback( async (event) =>  
    {
       event.preventDefault();
-      setResult("enviando....");
+      setResult(t("sending"));
       const formData = new FormData(event.currentTarget);
       formData.append("access_key", "9561feae-822a-4d1a-abe7-7b66cf150052");
   
@@ -26,13 +26,12 @@ export default function ContactForm() {
     const data = await response.json();
 
     if (data.success) {
-        setResult("sucesso");
+      setResult(t("success"));
         event.target.reset();
       } else {
-        console.log("erro", data);
         setResult(data.message);
       }
-    }, []);
+    }, [t]);
   
   
 
