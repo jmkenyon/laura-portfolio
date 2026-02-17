@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   keywords: [
     "arquitetura",
     "arquiteta",
+    "arquiteto",
     "interiores",
     "design de interiores",
     "arquitetura contemporânea",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Laura Consoni" }],
   creator: "Laura Consoni",
   publisher: "Laura Consoni",
-  metadataBase: new URL("https://lauraconsoni.com"),
+  metadataBase: new URL("https://lauraconsoni.com.br"),
   openGraph: {
     title: "Laura Consoni — Arquitetura e Interiores",
     description:
