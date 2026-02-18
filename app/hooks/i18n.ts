@@ -32,7 +32,7 @@ const resources = {
 
       about6:
         "I am currently developing my Final Graduation Project (TFG), in which I investigate the requalification of ruins and the city as a living palimpsest, integrating Brazilian and international references to propose new forms of dialogue between past and present.",
-      experiences: "experiences",
+      experiences: "professional experience",
       academic: "academic",
       languages: "languages",
       competitions: "competitions",
@@ -44,7 +44,7 @@ const resources = {
       academic1_title: "Bachelor's Degree in Architecture and Urbanism",
       academic1_institution:
         "Presbyterian University Mackenzie, São Paulo - Brazil",
-      academic1_years: "2020/1 - present",
+      academic1_years: "2020/1 - 2025/2",
 
       academic2_title: "XVIII Institutional Scientific Initiation Journey",
       academic2_subtitle:
@@ -137,7 +137,10 @@ const resources = {
       project5_description4:
         "Furthermore, the creation of aluminum and canvas modules, inspired by the original mushroom-shaped pillars, connects the station to the bus terminal. We activated the southern zone by extending the canopy, transforming an obsolete area into a gastronomic space with improved connection to the exterior. Finally, the central area becomes more inviting, offering various facilities for sales, waiting, and information.",
       success: "email sent",
-      sending: "sending..."
+      sending: "sending...",
+      summary: "summary",
+      summary_text: "I am a self-motivated architectural professional with a strong ability to learn new tools and develop technical skills independently. I have a particular interest in technology applied to architecture and continuously seek to refine my technical expertise, especially in architectural visualisation, exploring the integration of AI-based tools within rendering processes and design workflows. I am currently expanding my knowledge of Revit, complementing my previous experience using Archicad as my primary BIM platform, with the aim of broadening my technical adaptability and skill set.Committed to the quality of my work, I approach each project with responsibility, attention to detail and a continuous drive for professional development."
+
     },
 
   },
@@ -164,7 +167,7 @@ const resources = {
         "Tenho uma forte paixão pela arquitetura e pela capacidade que ela tem de transformar contextos urbanos e narrativas históricas. Sou curiosa, dedicada e tenho facilidade em aprender novas habilidades, especialmente aquelas que ampliam minha autonomia criativa e técnica dentro do processo de projeto.",
       about6:
         "Atualmente, desenvolvo meu Trabalho Final de Graduação (TFG), no qual investigo a requalificação de ruínas e a cidade como palimpsesto vivo, integrando referências brasileiras e internacionais para propor novas formas de diálogo entre passado e presente.",
-      experiences: "experiências",
+      experiences: "experiências profissionais",
       academic: "acadêmico",
       languages: "idiomas",
       competitions: "competições",
@@ -175,7 +178,7 @@ const resources = {
       academic1_title: "Graduação em Arquitetura e Urbanismo",
       academic1_institution:
         "Universidade Presbiteriana Mackenzie, São Paulo - Brasil",
-      academic1_years: "2020/1 - atual",
+      academic1_years: "2020/1 - 2025/2",
 
       academic2_title: "XVIII Jornada Institucional de Iniciação Científica",
       academic2_subtitle:
@@ -273,7 +276,9 @@ const resources = {
       project5_description4:
         "Além disso, a criação de módulos de alumínio e lona, inspirados nos pilares originais em forma de cogumelo, conecta a estação ao terminal de ônibus. Ativamos a zona sul do projeto estendendo a cobertura, transformando uma área obsoleta em um espaço gastronômico com melhor conectividade com o exterior. Por fim, a área central torna-se mais convidativa, apresentando diversas instalações de venda, espera e informação.",
       success: "email enviado",
-      sending: "enviando..."
+      sending: "enviando...",
+      summary: "resumo",
+      summary_text: "Sou um profissional de arquitetura automotivado, com forte capacidade de aprender novas ferramentas e desenvolver habilidades técnicas de forma independente. Tenho um interesse particular em tecnologia aplicada à arquitetura e busco continuamente aprimorar minha expertise técnica, especialmente em visualização arquitetônica, explorando a integração de ferramentas baseadas em IA dentro dos processos de renderização e fluxos de trabalho de design. Atualmente, estou expandindo meu conhecimento em Revit, complementando minha experiência prévia usando Archicad como minha principal plataforma BIM, com o objetivo de ampliar minha adaptabilidade técnica e conjunto de habilidades. Comprometido com a qualidade do meu trabalho, abordo cada projeto com responsabilidade, atenção aos detalhes e um impulso contínuo para o desenvolvimento profissional."
     },
   },
 };

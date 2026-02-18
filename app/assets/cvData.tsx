@@ -1,5 +1,8 @@
+
+
 export const useCvData = () => {
   return [
+
     {
       title: "experiences",
       items: [
@@ -70,7 +73,7 @@ export const useCvData = () => {
       items: [
         { text: "Autodesk Autocad" },
         { text: "Archicad" },
-        { text: "Rhinoceros" },
+        { text: "Revit" },
         { text: "Sketchup" },
         { text: "Caos Vray" },
         { text: "Twinmotion" },
