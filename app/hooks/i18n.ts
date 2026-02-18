@@ -16,7 +16,7 @@ const resources = {
       fullName: "full name",
       send: "send",
       about1:
-      "I am an architect and urban designer graduated from Mackenzie Presbyterian University in São Paulo. I am 23 years old and originally from Santos (SP), where I lived until moving to São Paulo in 2020 to begin my academic journey.",
+      "I am an architect and urban designer graduated from Mackenzie Presbyterian University in São Paulo.",
 
       about2:
         "Between 2021 and 2022, I participated in the XVIII Institutional Scientific Initiation Journey, developing a research paper on the requalification of ruins under the guidance of Professor Guilherme Michellin at FAU Mackenzie. In 2023, I completed a one-year academic exchange program at ENSAP Val-de-Seine in Paris, an experience that significantly expanded my theoretical, cultural, and urban perspectives.",
@@ -157,7 +157,7 @@ const resources = {
       send: "enviar",
       resume: "currículo",
       about1:
-        "Sou arquiteta e urbanista formada pela Universidade Presbiteriana Mackenzie, em São Paulo. Tenho 23 anos e sou natural de Santos (SP), onde vivi até me mudar para São Paulo, em 2020, para iniciar minha trajetória acadêmica.",
+        "Sou arquiteta e urbanista formada pela Universidade Presbiteriana Mackenzie, em São Paulo. ",
       about2:
         "Entre 2021 e 2022, participei da XVIII Jornada de Iniciação Científica, desenvolvendo uma pesquisa sobre a requalificação de ruínas sob orientação do Professor Guilherme Michellin, na FAU Mackenzie. Em 2023, realizei um intercâmbio acadêmico de um ano na ENSAP Val-de-Seine, em Paris, experiência que ampliou significativamente minhas perspectivas teóricas, culturais e urbanas.",
       about3:
