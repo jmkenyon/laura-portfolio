@@ -281,10 +281,14 @@ const resources = {
 if (!i18n.isInitialized) {
   i18n.use(initReactI18next).init({
     resources,
-    lng: "en",
-    fallbackLng: "pt-BR",
+    fallbackLng: "en",
+    detection: {
+      order: ["cookie"],
+      caches: ["cookie"],
+    },
     interpolation: { escapeValue: false },
   });
 }
+
 
 export default i18n;
