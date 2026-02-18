@@ -281,8 +281,8 @@ const resources = {
 if (!i18n.isInitialized) {
   i18n.use(initReactI18next).init({
     resources,
-    lng: "pt-BR",
-    fallbackLng: "en",
+    lng: "en",
+    fallbackLng: "pt-BR",
     interpolation: { escapeValue: false },
   });
 }
