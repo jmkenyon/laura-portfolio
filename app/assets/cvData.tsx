@@ -49,6 +49,7 @@ export const useCvData = () => {
       items: [
         { text: "language_portuguese" },
         { text: "language_english" },
+        { text: "language_spanish" },
         { text: "language_french" },
       ],
     },
