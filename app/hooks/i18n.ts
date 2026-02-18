@@ -289,11 +289,19 @@ const getDefaultLanguage = () => {
   return "en"; // fallback
 };
 
+let fallback = "pt-BR";
+if (typeof window !== "undefined") {
+  const hostname = window.location.hostname;
+
+  if (hostname.endsWith(".com.br")) fallback = "en";
+  else if (hostname.endsWith(".co.uk")) fallback = "pt-BR";
+}
+
 if (!i18n.isInitialized) {
   i18n.use(initReactI18next).init({
     resources,
     lng: getDefaultLanguage(),
-    fallbackLng: "en",
+    fallbackLng: fallback,
     interpolation: { escapeValue: false },
   });
 }
