@@ -278,14 +278,22 @@ const resources = {
   },
 };
 
+const getDefaultLanguage = () => {
+  if (typeof window === "undefined") return "en";
+
+  const hostname = window.location.hostname;
+
+  if (hostname.endsWith(".com.br")) return "pt-BR";
+  if (hostname.endsWith(".co.uk")) return "en";
+
+  return "en"; // fallback
+};
+
 if (!i18n.isInitialized) {
   i18n.use(initReactI18next).init({
     resources,
+    lng: getDefaultLanguage(),
     fallbackLng: "en",
-    detection: {
-      order: ["cookie"],
-      caches: ["cookie"],
-    },
     interpolation: { escapeValue: false },
   });
 }
