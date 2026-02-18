@@ -16,7 +16,7 @@ const resources = {
       fullName: "full name",
       send: "send",
       about1:
-        "I am an Architecture and Urbanism student, currently completing my 8th semester at Universidade Presbiteriana Mackenzie in São Paulo. I am 22 years old and originally from Santos (SP), where I lived until moving to São Paulo in 2020 to begin my academic journey.",
+        "I am an Architecture and Urbanism student, currently completing my 8th semester at Universidade Presbiteriana Mackenzie in São Paulo. I am 23 years old and originally from Santos (SP), where I lived until moving to São Paulo in 2020 to begin my academic journey.",
 
       about2:
         "Between 2021 and 2022, I took part in the XVIII Institutional Scientific Initiation Journey, developing a research paper on the requalification of ruins under the guidance of Professor Guilherme Michellin from FAU Mackenzie.",
@@ -153,7 +153,7 @@ const resources = {
       send: "enviar",
       resume: "currículo",
       about1:
-        "Sou estudante de Arquitetura e Urbanismo, atualmente concluindo o 8º semestre na Universidade Presbiteriana Mackenzie, em São Paulo. Tenho 22 anos e sou natural de Santos (SP), cidade da qual me mudei em 2020 para iniciar minha formação acadêmica.",
+        "Sou estudante de Arquitetura e Urbanismo, atualmente concluindo o 8º semestre na Universidade Presbiteriana Mackenzie, em São Paulo. Tenho 23 anos e sou natural de Santos (SP), cidade da qual me mudei em 2020 para iniciar minha formação acadêmica.",
       about2:
         "Entre 2021 e 2022, participei da XVIII Jornada Institucional de Iniciação Científica, desenvolvendo um artigo sobre requalificação de ruínas, orientado pelo professor Guilherme Michellin, da FAU Mackenzie.",
       about3:
