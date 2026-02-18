@@ -16,22 +16,23 @@ const resources = {
       fullName: "full name",
       send: "send",
       about1:
-        "I am an Architecture and Urbanism student, currently completing my 8th semester at Universidade Presbiteriana Mackenzie in São Paulo. I am 23 years old and originally from Santos (SP), where I lived until moving to São Paulo in 2020 to begin my academic journey.",
+      "I am an architect and urban designer graduated from Universidade Presbiteriana Mackenzie in São Paulo. I am 23 years old and originally from Santos (SP), where I lived until moving to São Paulo in 2020 to begin my academic journey.",
 
       about2:
-        "Between 2021 and 2022, I took part in the XVIII Institutional Scientific Initiation Journey, developing a research paper on the requalification of ruins under the guidance of Professor Guilherme Michellin from FAU Mackenzie.",
+        "Between 2021 and 2022, I participated in the XVIII Institutional Scientific Initiation Journey, developing a research paper on the requalification of ruins under the guidance of Professor Guilherme Michellin at FAU Mackenzie. In 2023, I completed a one-year academic exchange program at ENSAP Val-de-Seine in Paris, an experience that significantly expanded my theoretical, cultural, and urban perspectives.",
 
       about3:
-        "In 2023, I completed an academic exchange program at ENSAP Val-de-Seine in Paris, where I studied for one year and expanded my theoretical, cultural, and urban perspectives.",
+        "Since 2022, I have worked at Shinagawa Arquitetura, where I deepened my professional practice and strengthened my interest in projects that connect memory, the city, and contemporary architecture. Throughout my academic and professional path, I have cultivated a strong commitment to architecture’s ability to transform urban contexts and reinterpret historical narratives.",
 
       about4:
-        "Since 2022, I have worked as an intern at Shinagawa Arquitetura, an experience that deepened my professional practice and strengthened my interest in projects that connect memory, the city, and contemporary architecture.",
+        "My Final Graduation Project investigated the requalification of ruins and the city as a living palimpsest, integrating Brazilian and international references to propose new forms of dialogue between past and present. This research consolidated my interest in heritage, urban memory, and adaptive reuse strategies.",
 
       about5:
-        "I have a strong passion for architecture and for its ability to transform urban contexts and historical narratives. I am curious, dedicated, and quick to learn new skills, especially those that broaden my creative and technical autonomy within the design process.",
+      "I am a self-motivated architectural professional with a strong ability to independently learn new tools and develop technical skills. I have a particular interest in technology applied to architecture and continuously refine my expertise in architectural visualization, especially exploring the integration of AI-based tools within rendering processes and design workflows. I am currently expanding my knowledge of Revit, complementing my previous experience with Archicad as my primary BIM platform, aiming to broaden my technical adaptability.",
 
       about6:
-        "I am currently developing my Final Graduation Project (TFG), in which I investigate the requalification of ruins and the city as a living palimpsest, integrating Brazilian and international references to propose new forms of dialogue between past and present.",
+      "Committed to the quality of my work, I approach each project with responsibility, attention to detail, and a continuous drive for professional growth.",
+      
       experiences: "professional experience",
       academic: "academic",
       languages: "languages",
@@ -156,17 +157,17 @@ const resources = {
       send: "enviar",
       resume: "currículo",
       about1:
-        "Sou estudante de Arquitetura e Urbanismo, atualmente concluindo o 8º semestre na Universidade Presbiteriana Mackenzie, em São Paulo. Tenho 23 anos e sou natural de Santos (SP), cidade da qual me mudei em 2020 para iniciar minha formação acadêmica.",
+        "Sou arquiteta e urbanista formada pela Universidade Presbiteriana Mackenzie, em São Paulo. Tenho 23 anos e sou natural de Santos (SP), onde vivi até me mudar para São Paulo, em 2020, para iniciar minha trajetória acadêmica.",
       about2:
-        "Entre 2021 e 2022, participei da XVIII Jornada Institucional de Iniciação Científica, desenvolvendo um artigo sobre requalificação de ruínas, orientado pelo professor Guilherme Michellin, da FAU Mackenzie.",
+        "Entre 2021 e 2022, participei da XVIII Jornada de Iniciação Científica, desenvolvendo uma pesquisa sobre a requalificação de ruínas sob orientação do Professor Guilherme Michellin, na FAU Mackenzie. Em 2023, realizei um intercâmbio acadêmico de um ano na ENSAP Val-de-Seine, em Paris, experiência que ampliou significativamente minhas perspectivas teóricas, culturais e urbanas.",
       about3:
-        "Em 2023, realizei um intercâmbio acadêmico na ENSAP Val-de-Seine, em Paris, onde estudei por um ano, ampliando meu repertório teórico, cultural e urbano.",
+      "Desde 2022, atuei no escritório Shinagawa Arquitetura, onde aprofundei minha prática profissional e consolidei meu interesse por projetos que articulam memória, cidade e arquitetura contemporânea. Ao longo da minha formação acadêmica e profissional, desenvolvi um olhar atento ao potencial da arquitetura como instrumento de transformação dos contextos urbanos e de ressignificação das narrativas históricas.",
       about4:
-        "Desde 2022, atuei como estagiária no escritório Shinagawa Arquitetura, experiência que aprofundou minha prática profissional e consolidou meu interesse por projetos que articulam memória, cidade e contemporaneidade.",
+      "Meu Trabalho Final de Graduação investigou a requalificação de ruínas e a cidade como palimpsesto vivo, integrando referências brasileiras e internacionais para propor novos diálogos entre passado e presente. Essa pesquisa consolidou meu interesse por patrimônio, memória urbana e estratégias de reuso adaptativo.",
       about5:
-        "Tenho uma forte paixão pela arquitetura e pela capacidade que ela tem de transformar contextos urbanos e narrativas históricas. Sou curiosa, dedicada e tenho facilidade em aprender novas habilidades, especialmente aquelas que ampliam minha autonomia criativa e técnica dentro do processo de projeto.",
+      "Sou uma profissional proativa, com grande autonomia no aprendizado de novas ferramentas e no desenvolvimento de habilidades técnicas. Tenho especial interesse em tecnologia aplicada à arquitetura e busco constantemente aprimorar minha atuação em visualização arquitetônica, explorando a integração de ferramentas baseadas em inteligência artificial nos processos de renderização e fluxos de projeto. Atualmente, estou expandindo meus conhecimentos em Revit, complementando minha experiência prévia com Archicad como principal plataforma BIM, com o objetivo de ampliar minha adaptabilidade técnica.",
       about6:
-        "Atualmente, desenvolvo meu Trabalho Final de Graduação (TFG), no qual investigo a requalificação de ruínas e a cidade como palimpsesto vivo, integrando referências brasileiras e internacionais para propor novas formas de diálogo entre passado e presente.",
+        "Comprometida com a qualidade do meu trabalho, conduzo cada projeto com responsabilidade, atenção aos detalhes e um constante desejo de evolução profissional.",
       experiences: "experiências profissionais",
       academic: "acadêmico",
       languages: "idiomas",
