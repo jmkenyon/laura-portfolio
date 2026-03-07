@@ -1,9 +1,10 @@
 
 "use client"
 
-import { useProjectData } from "../assets/projectData";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useProjectData } from "../assets/projectData";
 
 const ProjectCard = () => {
     const colSpanMap: Record<number, string> = {
