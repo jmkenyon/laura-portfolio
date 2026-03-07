@@ -7,6 +7,7 @@ export type Project = {
   gridSize: number; 
   description: string[];
   padding?: string
+  
   images: {
     thumbnail: string;
     gallery: string[];

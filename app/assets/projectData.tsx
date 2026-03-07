@@ -18,8 +18,8 @@ export const useProjectData = (): Project[] => {
       images: {
         thumbnail: "/projects/project1/image1.jpg",
         gallery: [
-          "/projects/project1/image1.jpg",
-          "/projects/project1/image2.jpg",
+          "/projects/project1/image7_1.png",
+          "/projects/project1/image8_1.png",
         ],
         plants: [
           "/projects/project1/image5.png",
@@ -27,8 +27,12 @@ export const useProjectData = (): Project[] => {
         ],
         secondary: [
           { src: "/projects/project1/image3.jpg", size: "large" },
-          { src: "/projects/project1/image4.jpg", size: "medium" },
         ],
+        doublePlants: [
+          "/projects/project1/image9_1.png",
+          "/projects/project1/image10_1.png",
+        ]
+
       },
     },
     {
