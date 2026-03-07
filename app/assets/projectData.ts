@@ -59,7 +59,7 @@ export const useProjectData = (): Project[] => {
           "/projects/project2/image6.webp",
         ],
         plants: [
-          "/projects/project2/image8.webp",
+          "/projects/project2/image8.png",
           "/projects/project2/image9.webp",
         ],
         secondary: [{ src: "/projects/project2/image7.webp", size: "medium" }],
@@ -88,7 +88,7 @@ export const useProjectData = (): Project[] => {
 
         ],
         plants: [
-          "/projects/project3/image9.png",
+          "/projects/project3/image9.webp",
           "/projects/project3/image10.webp",
          
         ],
