@@ -9,7 +9,7 @@ const poppins = Poppins({
   weight: ["200", "300"],
 });
 
-export const metadata: Metadata = {
+const brasilMetadata = {
   title: "Laura Consoni | Arquitetura",
   description:
     "Portfólio da arquiteta Laura Consoni. Projetos residenciais, comerciais e interiores com enfoque em arquitetura contemporânea, materiais naturais e soluções detalhadas. São Paulo, Brasil.",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Laura Consoni — Arquitetura e Interiores",
     description:
       "Portfólio de arquitetura e interiores da arquiteta Laura Consoni. Projetos residenciais, comerciais e espaços contemporâneos desenvolvidos em São Paulo e no Brasil.",
-    url: "https://lauraconsoni.com",
+    url: "https://lauraconsoni.com.br",
     siteName: "Laura Consoni",
     type: "website",
     locale: "pt_BR",
@@ -55,10 +55,71 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://lauraconsoni.com",
+    canonical: "https://lauraconsoni.com.br",
   },
   category: "architecture",
 };
+
+const englishMetadata = {
+  title: "Laura Consoni | Architecture",
+  description:
+    "Portfolio of architect Laura Consoni. Residential, commercial and interior projects with a focus on contemporary architecture, natural materials and detailed design solutions. Based in São Paulo, Brazil.",
+  keywords: [
+    "architecture",
+    "architect",
+    "interior design",
+    "interiors",
+    "contemporary architecture",
+    "residential architecture",
+    "commercial architecture",
+    "architecture portfolio",
+    "architecture studio",
+    "modern architecture",
+    "minimalist architecture",
+    "renovation",
+    "refurbishment",
+    "bespoke architecture",
+    "Brazilian architecture",
+    "São Paulo architect",
+    "laura consoni",
+  ],
+  authors: [{ name: "Laura Consoni" }],
+  creator: "Laura Consoni",
+  publisher: "Laura Consoni",
+  metadataBase: new URL("https://lauraconsoni.co.uk"),
+  openGraph: {
+    title: "Laura Consoni — Architecture & Interiors",
+    description:
+      "Architecture and interiors portfolio of Laura Consoni. Residential, commercial and contemporary spaces designed in São Paulo, Brazil.",
+    url: "https://lauraconsoni.co.uk",
+    siteName: "Laura Consoni",
+    type: "website",
+    locale: "en_GB",
+    images: [
+      {
+        url: "/laura-about.webp",
+        width: 1200,
+        height: 630,
+        alt: "Architecture project by Laura Consoni",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://lauraconsoni.co.uk",
+  },
+  category: "architecture",
+};
+
+const chooseMetadata = (): Metadata => {
+  const hostname = window.location.hostname;
+
+  if (hostname.endsWith(".com.br")) return brasilMetadata;
+  else if (hostname.endsWith(".co.uk")) return englishMetadata;
+  else return brasilMetadata; // Default to Brazilian Portuguese metadata
+};
+
+export const metadata: Metadata = chooseMetadata();
+
 export default function RootLayout({
   children,
 }: {
