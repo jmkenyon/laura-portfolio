@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 
 import "./globals.css";
 import { Providers } from "./components/Providers";
+import { headers } from "next/headers";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -110,23 +111,28 @@ const englishMetadata = {
   category: "architecture",
 };
 
-const chooseMetadata = (): Metadata => {
-  const hostname = window.location.hostname;
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "";
 
-  if (hostname.endsWith(".com.br")) return brasilMetadata;
-  else if (hostname.endsWith(".co.uk")) return englishMetadata;
-  else return brasilMetadata; // Default to Brazilian Portuguese metadata
-};
+  if (host.endsWith(".co.uk")) return englishMetadata;
+  if (host.endsWith(".com.br")) return brasilMetadata;
+  return brasilMetadata; // default
+}
 
-export const metadata: Metadata = chooseMetadata();
 
-export default function RootLayout({
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "";
+  const lang = host.endsWith(".co.uk") ? "en-GB" : "pt-BR";
+
   return (
-    <html lang="pt-BR" className="bg-white font-extralight">
+    <html lang={lang} className="bg-white font-extralight">
       <body className={`${poppins.className} antialiased`}>
         <Providers>
           <main>{children}</main>
