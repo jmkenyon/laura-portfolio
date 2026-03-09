@@ -16,6 +16,7 @@ interface ProjectInfoProps {
     padding?: string;
     images: {
       thumbnail?: string;
+      largeGallery?: string[];
       gallery: string[];
       plants?: string[];
       secondary?: {
@@ -57,7 +58,29 @@ const ProjectInfo = ({ project }: ProjectInfoProps) => {
         </div>
       </div>
 
+
+
       <div className="flex flex-col max-w-[900px] md:max-w-[800px] 3xl:max-w-[1000px]  w-full">
+
+      {project.images.largeGallery && (
+          <div
+            className={cn(
+              "grid grid-cols-1 gap-2 place-items-center pb-2 ",
+              project.padding && project.padding
+            )}
+          >
+            {project.images.largeGallery?.map((img, index) => (
+              <Image
+                key={index}
+                src={img}
+                alt={`${t(project.title)} ${index + 1}`}
+                height={400}
+                width={1000}
+                className="lg:w-[1000px] md:w-[400px]"
+              />
+            ))}
+          </div>
+        )}
         <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center gap-2 pb-2">
           {project.images.gallery.map((img, index) => {
             const isLast = index === project.images.gallery.length - 1;

@@ -10,6 +10,7 @@ export type Project = {
   
   images: {
     thumbnail: string;
+    largeGallery?: string[];
     gallery: string[];
     plants?: string[];
     secondary?: {
