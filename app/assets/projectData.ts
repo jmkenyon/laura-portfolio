@@ -16,7 +16,7 @@ export const useProjectData = (): Project[] => {
         "project1_description4",
       ],
       images: {
-        thumbnail: "/projects/project1/image8_1.webp",
+        thumbnail: "/projects/project1/image8_2.webp",
         gallery: [
           "/projects/project1/image7_2.webp",
           "/projects/project1/image8_2.webp",
