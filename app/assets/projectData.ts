@@ -29,8 +29,8 @@ export const useProjectData = (): Project[] => {
           { src: "/projects/project1/image3.webp", size: "large" },
         ],
         doublePlants: [
-          "/projects/project1/image9_1.webp",
-          "/projects/project1/image10_1.webp",
+          "/projects/project1/image9_2.webp",
+          "/projects/project1/image10_2.webp",
         ]
 
       },
