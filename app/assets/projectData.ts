@@ -20,6 +20,12 @@ export const useProjectData = (): Project[] => {
         gallery: [
           "/projects/project1/image7_2.webp",
           "/projects/project1/image8_2.webp",
+          "/projects/project1/image11.webp",
+          "/projects/project1/image12.webp",
+          "/projects/project1/image13.webp",
+          "/projects/project1/image14.webp",
+          "/projects/project1/image15.webp",
+          "/projects/project1/image16.webp",
         ],
         plants: [
           "/projects/project1/image6_1.webp",
