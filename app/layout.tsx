@@ -48,7 +48,7 @@ const brasilMetadata = {
     locale: "pt_BR",
     images: [
       {
-        url: "/laura-about.webp",
+        url: "/laura-about_2.webp",
         width: 1200,
         height: 630,
         alt: "Projeto de Arquitetura por Laura Consoni",
@@ -98,7 +98,7 @@ const englishMetadata = {
     locale: "en_GB",
     images: [
       {
-        url: "/laura-about.webp",
+        url: "/laura-about_2.webp",
         width: 1200,
         height: 630,
         alt: "Architecture project by Laura Consoni",

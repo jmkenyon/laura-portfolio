@@ -16,7 +16,7 @@ const Page = () => {
       <Navbar />
       <div className="flex md:flex-row flex-col">
         <Image
-          src="/laura-about.webp"
+          src="/laura-about_2.webp"
           alt="Laura about photo"
           width={350}
           height={600}
