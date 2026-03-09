@@ -7,8 +7,8 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const images: string[] = [
   "/background-image_2.webp",
-  "/background-image2_1.webp",
-  "/background-image3_1.webp",
+  "/background-image2_2.webp",
+  "/background-image3_2.webp",
 ];
 
 export default function Home() {
