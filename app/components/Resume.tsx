@@ -33,11 +33,18 @@ const Resume = () => {
                     item.text.map((line, lineIndex) => (
                       <p key={lineIndex} className="text-sm">
                         {typeof line === "string" ? t(line) : line}{" "}
-                        {typeof line !== "string" && <BiLink className="inline" color="gray" />}
+                        {typeof line !== "string" && (
+                          <BiLink className="inline" color="gray" />
+                        )}
                       </p>
                     ))
                   ) : (
-                    <p className="text-sm">{t(item.text)}</p>
+                    <p className="text-sm">
+                      {typeof item.text === "string" ? t(item.text) : item.text}
+                      {typeof item.text !== "string" && (
+                        <BiLink className="inline" color="gray" />
+                      )}
+                    </p>
                   ))}
               </div>
             ))}

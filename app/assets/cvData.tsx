@@ -85,7 +85,17 @@ export const useCvData = (t: TFunction) => {
       title: "publications",
       items: [
         { subtitle: "publication1_title" },
-        { text: "publication1_subtitle" },
+
+        { text: 
+          <a
+            key="publication"
+          href="/publication.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t(  "publication1_subtitle" )}
+        </a>,
+        },
         { text: "publication1_year" },
       ],
     },
