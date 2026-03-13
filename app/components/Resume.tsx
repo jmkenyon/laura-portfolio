@@ -1,12 +1,11 @@
 "use client";
 import { useTranslation } from "react-i18next";
 import { useCvData } from "../assets/cvData";
+import { BiLink } from "react-icons/bi";
 
 const Resume = () => {
-  const cvData = useCvData();
   const { t } = useTranslation();
-
-  
+  const cvData = useCvData(t);
 
   return (
     <>
@@ -33,7 +32,8 @@ const Resume = () => {
                   (Array.isArray(item.text) ? (
                     item.text.map((line, lineIndex) => (
                       <p key={lineIndex} className="text-sm">
-                        {t(line)}
+                        {typeof line === "string" ? t(line) : line}{" "}
+                        {typeof line !== "string" && <BiLink className="inline" color="gray" />}
                       </p>
                     ))
                   ) : (

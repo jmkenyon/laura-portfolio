@@ -141,7 +141,12 @@ const resources = {
       success: "email sent",
       sending: "sending...",
       summary: "summary",
-      summary_text: "I am a self-motivated architectural professional with a strong ability to learn new tools and develop technical skills independently. I have a particular interest in technology applied to architecture and continuously seek to refine my technical expertise, especially in architectural visualisation, exploring the integration of AI-based tools within rendering processes and design workflows. I am currently expanding my knowledge of Revit, complementing my previous experience using Archicad as my primary BIM platform, with the aim of broadening my technical adaptability and skill set.Committed to the quality of my work, I approach each project with responsibility, attention to detail and a continuous drive for professional development."
+      summary_text: "I am a self-motivated architectural professional with a strong ability to learn new tools and develop technical skills independently. I have a particular interest in technology applied to architecture and continuously seek to refine my technical expertise, especially in architectural visualisation, exploring the integration of AI-based tools within rendering processes and design workflows. I am currently expanding my knowledge of Revit, complementing my previous experience using Archicad as my primary BIM platform, with the aim of broadening my technical adaptability and skill set.Committed to the quality of my work, I approach each project with responsibility, attention to detail and a continuous drive for professional development.",
+      experience2_title: "Co-Founder",
+      experience2_company: "Maquete.ai",
+      experience2_role: "AI startup for generating architectural images",
+      experience2_dates: "2026/1 - present",
+      experience1_dates: "2022/2 - 2025/2",
 
     },
 
@@ -281,7 +286,13 @@ const resources = {
       success: "email enviado",
       sending: "enviando...",
       summary: "resumo",
-      summary_text: "Sou um profissional de arquitetura automotivado, com forte capacidade de aprender novas ferramentas e desenvolver habilidades técnicas de forma independente. Tenho um interesse particular em tecnologia aplicada à arquitetura e busco continuamente aprimorar minha expertise técnica, especialmente em visualização arquitetônica, explorando a integração de ferramentas baseadas em IA dentro dos processos de renderização e fluxos de trabalho de design. Atualmente, estou expandindo meu conhecimento em Revit, complementando minha experiência prévia usando Archicad como minha principal plataforma BIM, com o objetivo de ampliar minha adaptabilidade técnica e conjunto de habilidades. Comprometido com a qualidade do meu trabalho, abordo cada projeto com responsabilidade, atenção aos detalhes e um impulso contínuo para o desenvolvimento profissional."
+      summary_text: "Sou um profissional de arquitetura automotivado, com forte capacidade de aprender novas ferramentas e desenvolver habilidades técnicas de forma independente. Tenho um interesse particular em tecnologia aplicada à arquitetura e busco continuamente aprimorar minha expertise técnica, especialmente em visualização arquitetônica, explorando a integração de ferramentas baseadas em IA dentro dos processos de renderização e fluxos de trabalho de design. Atualmente, estou expandindo meu conhecimento em Revit, complementando minha experiência prévia usando Archicad como minha principal plataforma BIM, com o objetivo de ampliar minha adaptabilidade técnica e conjunto de habilidades. Comprometido com a qualidade do meu trabalho, abordo cada projeto com responsabilidade, atenção aos detalhes e um impulso contínuo para o desenvolvimento profissional.",
+      experience2_title: "Co-Fundadora",
+      experience2_company: "Maquete.ai",
+      experience2_role: "Startup de IA para geração de imagens arquitetônicas",
+      experience2_dates: "2026/1 - presente",
+      experience1_dates: "2022/2 - 2025/2",
+
     },
   },
 };

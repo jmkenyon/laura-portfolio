@@ -1,14 +1,34 @@
+import { TFunction } from "i18next";
 
 
-export const useCvData = () => {
+export const useCvData = (t: TFunction) => {
   return [
-
     {
       title: "experiences",
       items: [
-        { text: "experience1_title" },
-        { text: "experience1_company" },
-        { text: "experience1_role" },
+        {
+          subtitle: "experience2_title",
+          text: [
+            <a
+              key="maquete"
+              href="https://maquete.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("experience2_company")}
+            </a>,
+            t("experience2_role"),
+            t("experience2_dates"),
+          ]
+        },
+        {
+          subtitle: "experience1_title",
+          text: [
+            "experience1_company",
+            "experience1_role",
+            "experience1_dates",
+          ],
+        },
       ],
     },
     {
