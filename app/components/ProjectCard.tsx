@@ -4,9 +4,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { useProjectData } from "../assets/projectData";
 
 const ProjectCard = () => {
+  const { t } = useTranslation();
     const colSpanMap: Record<number, string> = {
         1: "lg:col-span-1",
         2: "lg:col-span-2",
@@ -45,7 +47,7 @@ const ProjectCard = () => {
                   <div className="hidden md:flex flex-col gap-1">
                     <p>{project.title}</p>
                     <hr />
-                    <p className="text-xs text-center">{project.ano}</p>
+                    <p className="text-xs text-center">{t(project.ano)}</p>
                   </div>
                 </div>
               </div>
@@ -53,7 +55,7 @@ const ProjectCard = () => {
             <div className="pt-3 pb-10 md:hidden flex flex-col justify-start ">
               <p >{project.title}</p>
               <hr />
-              <p className="text-xs pt-1">{project.ano}</p>
+              <p className="text-xs pt-1">{t(project.ano)}</p>
             </div>
           </div>
         ))}
