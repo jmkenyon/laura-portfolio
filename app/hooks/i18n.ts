@@ -138,6 +138,19 @@ const resources = {
         "Our project aims to improve the interaction between passengers, station employees, and complex workers by providing a better-equipped and better-organized space. The reorganization of the CDGVAL transport system facilitates circulation, while the new layout of the station's internal equipment creates an intuitive flow for visitors.",
       project5_description4:
         "Furthermore, the creation of aluminum and canvas modules, inspired by the original mushroom-shaped pillars, connects the station to the bus terminal. We activated the southern zone by extending the canopy, transforming an obsolete area into a gastronomic space with improved connection to the exterior. Finally, the central area becomes more inviting, offering various facilities for sales, waiting, and information.",
+
+      project6_project: "personal exploration",
+      project6_team: "individual",
+      project6_ano: "ongoing",
+      project6_description1:
+        "This collection brings together a series of interior compositions developed over time as independent studies. They are not tied to a specific project, but rather explore different ways of organizing space and atmosphere.",
+      project6_description2:
+        "Each composition comes from an interest in testing layouts, proportions, and materials across a range of environments. Without the constraints of a fixed brief, the process allows more freedom to experiment and refine ideas.",
+      project6_description3:
+        "The focus is on the experience of the space — how light, texture, and balance contribute to a sense of comfort and clarity.",
+      project6_description4:
+        "Together, these works reflect an ongoing exploration of interior architecture and visual representation.",
+
       success: "email sent",
       sending: "sending...",
       summary: "summary",
@@ -283,6 +296,19 @@ const resources = {
 
       project5_description4:
         "Além disso, a criação de módulos de alumínio e lona, inspirados nos pilares originais em forma de cogumelo, conecta a estação ao terminal de ônibus. Ativamos a zona sul do projeto estendendo a cobertura, transformando uma área obsoleta em um espaço gastronômico com melhor conectividade com o exterior. Por fim, a área central torna-se mais convidativa, apresentando diversas instalações de venda, espera e informação.",
+
+      project6_project: "exploração pessoal",
+      project6_team: "individual",
+      project6_ano: "em andamento",
+      project6_description1:
+        "Esta coleção reúne uma série de composições de interiores desenvolvidas ao longo do tempo como estudos independentes. Não estão vinculadas a um projeto específico, mas exploram diferentes formas de organizar o espaço e a atmosfera.",
+      project6_description2:
+        "Cada composição parte do interesse em testar layouts, proporções e materiais em diferentes contextos. Sem as limitações de um briefing fixo, o processo permite maior liberdade para experimentar e refinar ideias.",
+      project6_description3:
+        "O foco está na experiência do espaço, em como luz, textura e equilíbrio contribuem para uma sensação de conforto e clareza.",
+      project6_description4:
+        "No conjunto, esses trabalhos refletem uma investigação contínua sobre arquitetura de interiores e representação visual.",
+
       success: "email enviado",
       sending: "enviando...",
       summary: "resumo",

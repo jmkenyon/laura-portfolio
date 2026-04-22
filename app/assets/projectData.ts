@@ -3,6 +3,34 @@ import { Project } from "../types/types";
 export const useProjectData = (): Project[] => {
   return [
     {
+      title: "spatial compositions",
+      slug: "spatial-compositions",
+      projeto: "project6_project",
+      equipe: "project6_team",
+      ano: "project6_ano",
+      gridSize: 2,
+      description: [
+        "project6_description1",
+        "project6_description2",
+        "project6_description3",
+        "project6_description4",
+      ],
+      images: {
+        thumbnail: "/projects/project6/img 01.webp",
+        gallery: [
+          "/projects/project6/img 01.webp",
+          "/projects/project6/img 02.webp",
+          "/projects/project6/img 03.webp",
+          "/projects/project6/img 04.webp",
+          "/projects/project6/img 05.webp",
+          "/projects/project6/img 06.webp",
+          "/projects/project6/img 07.webp",
+          "/projects/project6/img 08.webp",
+          "/projects/project6/img 09.webp",
+        ],
+      },
+    },
+    {
       title: "cabana",
       slug: "cabana",
       projeto: "project1_project",
