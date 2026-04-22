@@ -6,7 +6,7 @@ import Translate from "./components/Translate";
 import { IoIosArrowDown } from "react-icons/io";
 
 const images: string[] = [
-  "/background-image_2.webp",
+  "/background-image_3.webp",
   "/background-image2_2.webp",
   "/background-image3_2.webp",
 ];
