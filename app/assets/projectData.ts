@@ -22,7 +22,11 @@ export const useProjectData = (): Project[] => {
           "/projects/project6/img%2002.webp",
           "/projects/project6/img%2003.webp",
           "/projects/project6/img%2004.webp",
+        ],
+        plants: [
           "/projects/project6/img%2005.webp",
+        ],
+        doublePlants: [
           "/projects/project6/img%2006.webp",
           "/projects/project6/img%2007.webp",
           "/projects/project6/img%2008.webp",
