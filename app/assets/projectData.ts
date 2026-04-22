@@ -75,7 +75,7 @@ export const useProjectData = (): Project[] => {
       projeto: "project2_project",
       equipe: "project2_team",
       ano: "2022/1",
-      gridSize: 2,
+      gridSize: 1,
       description: [
         "project2_description1",
         "project2_description2",
