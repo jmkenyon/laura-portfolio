@@ -1,24 +1,37 @@
-"use client"
+"use client";
 
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
 
 const AboutSection = () => {
-     const { t } = useTranslation();
-     const aboutArray = useMemo(() => 
-      ["about1", "about2", "about3", "about4", "about5", "about6"],
-     []
-    )
-     
+  const { t } = useTranslation();
+  const aboutArray = useMemo(
+    () => ["about1", "about2", "about3", "about4", "about5", "about6"],
+    []
+  );
 
   return (
-    <div className="flex flex-col gap-8 py-18 lg:px-20  md:px-10 justify-start xl:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl  max-w-xl text-sm">
-    <h1>[{t("about")}]</h1>
-    {aboutArray.map((para, index) => (
-      <p key={index}>{t(para)}</p>
-    ))}
-  </div>
-  )
-}
+    <div className="flex flex-col gap-8 py-12 lg:px-16 md:px-10 max-w-2xl">
+      <div className="label-mono text-foreground-muted">[ {t("about")} ]</div>
+      {aboutArray.map((para, index) => (
+        <motion.p
+          key={index}
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{
+            duration: 0.85,
+            ease: [0.22, 1, 0.36, 1],
+            delay: index * 0.05,
+          }}
+          className="text-sm leading-relaxed"
+        >
+          {t(para)}
+        </motion.p>
+      ))}
+    </div>
+  );
+};
 
-export default AboutSection
+export default AboutSection;

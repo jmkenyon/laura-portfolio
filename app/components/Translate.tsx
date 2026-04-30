@@ -19,44 +19,32 @@ const Translate = ({ mode }: TranslateProps) => {
     i18n.changeLanguage(lang === "port" ? "pt-BR" : "en");
   };
 
+  const muted = mode === "dark" ? "text-white/45" : "text-foreground-muted/70";
+  const live = mode === "dark" ? "text-white" : "text-foreground";
+
   return (
-    <div className="flex justify-end pb-6 pt-3 text-xs space-x-2">
-      <div
+    <div className="flex justify-end pb-6 pt-3 label-mono space-x-3">
+      <button
+        data-cursor="PT"
         className={cn(
-          "cursor-pointer",
-          isActive === "port" && mode === "dark" && "text-white",
-          isActive !== "port" && mode === "dark" && "hover:text-white",
-          isActive === "port" && mode === "light" && "text-black",
-          isActive !== "port" && mode === "light" && "hover:text-black",
-          isActive !== "port" && "text-gray-500"
+          "transition-colors duration-300",
+          isActive === "port" ? live : muted
         )}
         onClick={() => changeLang("port")}
       >
-        port
-      </div>
-
-      <div
+        pt
+      </button>
+      <span className={muted}>·</span>
+      <button
+        data-cursor="EN"
         className={cn(
-          mode === "dark" && "text-white",
-          mode === "light" && "text-black"
-        )}
-      >
-        {" / "}
-      </div>
-
-      <div
-        className={cn(
-          "cursor-pointer",
-          isActive === "eng" && mode === "dark" && "text-white",
-          isActive !== "eng" && mode === "dark" && "hover:text-white",
-          isActive === "eng" && mode === "light" && "text-black",
-          isActive !== "eng" && mode === "light" && "hover:text-black",
-          isActive !== "eng" && "text-gray-500"
+          "transition-colors duration-300",
+          isActive === "eng" ? live : muted
         )}
         onClick={() => changeLang("eng")}
       >
-        eng
-      </div>
+        en
+      </button>
     </div>
   );
 };

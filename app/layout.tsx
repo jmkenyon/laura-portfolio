@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Cormorant_Garamond, JetBrains_Mono } from "next/font/google";
 
 import "./globals.css";
 import { Providers } from "./components/Providers";
 import { headers } from "next/headers";
+import CustomCursor from "./components/CustomCursor";
+import PageTransition from "./components/PageTransition";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["200", "300"],
+  weight: ["200", "300", "400"],
+  variable: "--font-poppins",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400"],
+  variable: "--font-jetbrains",
 });
 
 const brasilMetadata = {
@@ -117,10 +133,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
   if (host.endsWith(".co.uk")) return englishMetadata;
   if (host.endsWith(".com.br")) return brasilMetadata;
-  return brasilMetadata; // default
+  return brasilMetadata;
 }
-
-
 
 export default async function RootLayout({
   children,
@@ -132,10 +146,17 @@ export default async function RootLayout({
   const lang = host.endsWith(".co.uk") ? "en-GB" : "pt-BR";
 
   return (
-    <html lang={lang} className="bg-white font-extralight">
-      <body className={`${poppins.className} antialiased`}>
+    <html
+      lang={lang}
+      className={`${poppins.variable} ${cormorant.variable} ${jetbrains.variable} bg-background font-extralight`}
+    >
+      <body className="antialiased text-foreground">
         <Providers>
-          <main>{children}</main>
+          <CustomCursor />
+          <div className="grain-overlay" aria-hidden />
+          <PageTransition>
+            <main>{children}</main>
+          </PageTransition>
         </Providers>
       </body>
     </html>

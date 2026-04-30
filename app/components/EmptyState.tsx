@@ -2,7 +2,7 @@
 
 import { memo } from "react";
 import { cn } from "../lib/utils";
-import  Navbar from "./Navbar";
+import Navbar from "./Navbar";
 import Translate from "./Translate";
 
 interface EmptyState {
@@ -14,35 +14,29 @@ interface EmptyState {
 const EmptyState: React.FC<EmptyState> = ({
   title = "Página não encontrada",
   subtitle = "A página que você procura não existe ou foi removida",
-  navbar = true
+  navbar = true,
 }) => {
   return (
-    <div className={cn(" bg-white",
-        navbar && "px-8 sm:py-8 py-13")}
+    <div
+      className={cn(
+        "bg-background text-foreground min-h-screen",
+        navbar && "px-6 sm:px-10 sm:py-10 py-13"
+      )}
     >
       {navbar && (
         <>
           <div className="hidden sm:block">
-            {" "}
             <Translate mode="light" />
           </div>
           <Navbar />
         </>
       )}
 
-      <div
-        className="
-        flex
-        flex-col
-        gap-2
-        justify-center
-        sm:items-center
-        items-start
-         h-[60vh]
-    "
-      >
-        <h1 className="text-sm font-semibold  text-gray-500">{title}</h1>
-        <p className="text-sm text-black">{subtitle}</p>
+      <div className="flex flex-col gap-4 justify-center items-start h-[60vh] max-w-[1400px] mx-auto">
+        <div className="label-mono text-foreground-muted">— {title}</div>
+        <h1 className="font-display text-5xl md:text-7xl tracking-tight lowercase leading-[0.95]">
+          {subtitle}
+        </h1>
       </div>
     </div>
   );
