@@ -56,7 +56,7 @@ const MobileMenu = ({ mode }: MobileMenuProps) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-50 bg-background text-foreground flex flex-col justify-between p-8"
+            className="fixed inset-0 z-50 bg-white text-foreground flex flex-col justify-between p-8"
           >
             <div className="flex justify-between items-center">
               <Link href="/" onClick={() => setIsOpen(false)}>

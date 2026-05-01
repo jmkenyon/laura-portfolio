@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const Loader = () => {
   return (
-    <div className="h-[70vh] flex flex-col justify-center items-center bg-background gap-6">
+    <div className="h-[70vh] flex flex-col justify-center items-center bg-white gap-6">
       <div className="relative w-16 h-16">
         <motion.span
           className="absolute inset-0 rounded-full border border-foreground/30"

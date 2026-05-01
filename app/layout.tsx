@@ -148,7 +148,7 @@ export default async function RootLayout({
   return (
     <html
       lang={lang}
-      className={`${poppins.variable} ${cormorant.variable} ${jetbrains.variable} bg-background font-extralight`}
+      className={`${poppins.variable} ${cormorant.variable} ${jetbrains.variable} bg-white font-extralight`}
     >
       <body className="antialiased text-foreground">
         <Providers>

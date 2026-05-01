@@ -7,6 +7,7 @@ import EmptyState from "@/app/components/EmptyState";
 import ProjectInfo from "@/app/components/ProjectInfo";
 import { useParams } from "next/navigation";
 import { useMemo } from "react";
+import Link from "next/link";
 
 const ProjectPage = () => {
   const params = useParams();
@@ -38,19 +39,19 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="px-6 sm:px-10 sm:py-10 py-13 bg-background text-sm text-foreground min-h-screen">
+    <div className="px-6 sm:px-10 sm:py-10 py-13 bg-white text-sm text-foreground min-h-screen">
       <div className="hidden sm:block">
         <Translate mode="light" />
       </div>
       <Navbar />
       <div className="pt-12 md:pt-16 max-w-[1600px] mx-auto">
-        <a
+        <Link
           href="/projetos"
 
           className="label-mono text-foreground-muted link-underline inline-block mb-6"
         >
           ← index
-        </a>
+        </Link>
         <ProjectInfo project={project} />
       </div>
       <footer className="mt-32 pt-10 border-t border-line label-mono text-foreground-muted flex justify-between max-w-[1600px] mx-auto">

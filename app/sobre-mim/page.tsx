@@ -7,7 +7,7 @@ import AboutSection from "../components/AboutSection";
 
 const Page = () => {
   return (
-    <div className="px-6 sm:px-10 sm:py-10 py-13 bg-background text-foreground min-h-screen">
+    <div className="px-6 sm:px-10 sm:py-10 py-13 bg-white text-foreground min-h-screen">
       <div className="hidden sm:block">
         <Translate mode="light" />
       </div>

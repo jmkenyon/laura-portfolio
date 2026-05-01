@@ -19,7 +19,7 @@ const EmptyState: React.FC<EmptyState> = ({
   return (
     <div
       className={cn(
-        "bg-background text-foreground min-h-screen",
+        "bg-white text-foreground min-h-screen",
         navbar && "px-6 sm:px-10 sm:py-10 py-13"
       )}
     >
