@@ -13,9 +13,8 @@ const Logo = ({ className }: LogoProps) => (
     aria-label="Laura Consoni"
     fill="currentColor"
   >
-    <rect x="0" y="14" width="6" height="6" transform="rotate(45 3 17)" />
     <text
-      x="18"
+      x="0"
       y="38"
       style={{
         fontFamily: "var(--font-cormorant), serif",

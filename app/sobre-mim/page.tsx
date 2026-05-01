@@ -17,7 +17,7 @@ const Page = () => {
         <div className="grid md:grid-cols-12 gap-10 items-end pb-16 mb-2 border-b border-line">
           <div className="md:col-span-7">
             <div className="label-mono text-foreground-muted mb-3">
-              ◇ profile — biography
+              profile — biography
             </div>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95]">
               laura <em className="font-serif-italic">consoni</em>

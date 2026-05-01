@@ -88,7 +88,7 @@ const ProjectCard = () => {
       >
         <div className="col-span-12 md:col-span-7">
           <div className="label-mono text-foreground-muted mb-3">
-            ◇ index — {projectData.length.toString().padStart(2, "0")} works
+            index — {projectData.length.toString().padStart(2, "0")} works
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95]">
             selected <em className="font-serif-italic">works</em>

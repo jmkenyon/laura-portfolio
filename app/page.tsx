@@ -90,7 +90,7 @@ export default function Home() {
           <div className="max-w-[1600px] mx-auto w-full">
             <div className="label-mono mb-6 text-white/70">
               <MaskReveal delay={0.1}>
-                ◇ ESTÚDIO DE ARQUITETURA &nbsp; / &nbsp; SÃO PAULO — BRASIL
+                ESTÚDIO DE ARQUITETURA &nbsp; / &nbsp; SÃO PAULO — BRASIL
               </MaskReveal>
             </div>
 

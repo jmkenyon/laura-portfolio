@@ -43,7 +43,7 @@ export default function ContactForm() {
       >
         <div className="md:col-span-12">
           <div className="label-mono text-foreground-muted mb-3">
-            ◇ {t("forCommissions")}
+            {t("forCommissions")}
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95] lowercase">
             {t("getInTouch")}{" "}

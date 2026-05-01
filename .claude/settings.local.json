@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git -C /Users/jkenyon/laura-portfolio status --short)",
+      "Bash(git -C /Users/jkenyon/laura-portfolio merge --ff-only claude/nervous-keller-cd387f)",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git -C /Users/jkenyon/laura-portfolio push origin main)",
+      "Bash(git -C /Users/jkenyon/laura-portfolio diff --stat package-lock.json)",
+      "Bash(git -C /Users/jkenyon/laura-portfolio diff package-lock.json)",
+      "Bash(git -C /Users/jkenyon/laura-portfolio stash push -m \"stale partial package-lock.json edits, superseded by regenerated lockfile\" -- package-lock.json)"
+    ]
+  }
+}

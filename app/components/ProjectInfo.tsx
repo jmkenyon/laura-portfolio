@@ -92,7 +92,7 @@ const ProjectInfo = ({ project }: ProjectInfoProps) => {
         className="md:sticky md:top-32 md:self-start md:w-[320px] flex-shrink-0"
       >
         <div className="label-mono text-foreground-muted mb-6">
-          ◇ project — {totalImages.toString().padStart(2, "0")} images
+          project — {totalImages.toString().padStart(2, "0")} images
         </div>
 
         <h1 className="font-display lowercase text-5xl md:text-6xl tracking-tight leading-[0.95] mb-10">

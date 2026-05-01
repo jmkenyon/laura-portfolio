@@ -13,7 +13,7 @@ const Resume = () => {
       <div className="flex items-center mb-16">
         <div className="grow border-t border-line" />
         <span className="mx-6 label-mono text-foreground-muted">
-          ◇ {t("resume")}
+          {t("resume")}
         </span>
         <div className="grow border-t border-line" />
       </div>
