@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 /**
  * Custom cursor:
@@ -9,6 +10,8 @@ import { useEffect, useRef, useState } from "react";
  * - expands on links / images / buttons
  */
 const CustomCursor = () => {
+  const pathname = usePathname();
+  const isLanding = pathname === "/";
   const dotRef = useRef<HTMLDivElement | null>(null);
   const ringRef = useRef<HTMLDivElement | null>(null);
   const [enabled, setEnabled] = useState(false);
@@ -18,12 +21,17 @@ const CustomCursor = () => {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    if (!isLanding) {
+      setEnabled(false);
+      document.documentElement.classList.remove("has-custom-cursor");
+      return;
+    }
     const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
     if (!fine) return;
     setEnabled(true);
     document.documentElement.classList.add("has-custom-cursor");
     return () => document.documentElement.classList.remove("has-custom-cursor");
-  }, []);
+  }, [isLanding]);
 
   useEffect(() => {
     if (!enabled) return;
