@@ -10,8 +10,8 @@ import MobileMenu from "./components/MobileMenu";
 
 const images: string[] = [
   "/background-image_3.webp",
-  "/background-image2_2.webp",
-  "/background-image3_2.webp",
+  "/background-image2_3.webp",
+  "/background-image3_3.webp",
 ];
 
 export default function Home() {
