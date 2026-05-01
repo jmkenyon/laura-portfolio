@@ -41,16 +41,14 @@ export default function ContactForm() {
         transition={{ duration: 0.95, ease: [0.22, 1, 0.36, 1] }}
         className="grid md:grid-cols-12 gap-10 items-end pb-16 border-b border-line"
       >
-        <div className="md:col-span-8">
+        <div className="md:col-span-12">
           <div className="label-mono text-foreground-muted mb-3">
-            ◇ get in touch — for new commissions
+            ◇ {t("forCommissions")}
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95] lowercase">
-            get in <em className="font-serif-italic">touch</em>
+            {t("getInTouch")}{" "}
+            <em className="font-serif-italic">{t("getInTouchAccent")}</em>
           </h1>
-        </div>
-        <div className="md:col-span-4 md:text-right text-sm text-foreground-muted">
-          <p>{t("sendMessage")}</p>
         </div>
       </motion.div>
 
