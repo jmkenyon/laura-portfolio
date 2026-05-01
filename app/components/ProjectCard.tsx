@@ -124,7 +124,7 @@ const ProjectCard = () => {
           >
             <Link
               href={`/projetos/${project.slug}`}
-              data-cursor="VIEW"
+
               className="group grid grid-cols-12 gap-4 items-center py-6 md:py-8 transition-all duration-500 hover:px-4"
             >
               {/* Number */}

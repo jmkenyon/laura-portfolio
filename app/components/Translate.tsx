@@ -25,7 +25,7 @@ const Translate = ({ mode }: TranslateProps) => {
   return (
     <div className="flex justify-end pb-6 pt-3 label-mono space-x-3">
       <button
-        data-cursor="PT"
+
         className={cn(
           "transition-colors duration-300",
           isActive === "port" ? live : muted
@@ -36,7 +36,7 @@ const Translate = ({ mode }: TranslateProps) => {
       </button>
       <span className={muted}>·</span>
       <button
-        data-cursor="EN"
+
         className={cn(
           "transition-colors duration-300",
           isActive === "eng" ? live : muted

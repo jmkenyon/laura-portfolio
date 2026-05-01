@@ -7,14 +7,11 @@ import { useEffect, useRef, useState } from "react";
  * - dot follows mouse 1:1
  * - ring eases toward mouse with smoothing
  * - expands on links / images / buttons
- * - shows a contextual label when hovering elements with `data-cursor` attr
  */
 const CustomCursor = () => {
   const dotRef = useRef<HTMLDivElement | null>(null);
   const ringRef = useRef<HTMLDivElement | null>(null);
-  const labelRef = useRef<HTMLDivElement | null>(null);
   const [enabled, setEnabled] = useState(false);
-  const [label, setLabel] = useState("");
   const [variant, setVariant] = useState<"default" | "hover" | "text">(
     "default"
   );
@@ -43,9 +40,6 @@ const CustomCursor = () => {
       if (dotRef.current) {
         dotRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
       }
-      if (labelRef.current) {
-        labelRef.current.style.transform = `translate3d(${mouseX + 28}px, ${mouseY + 28}px, 0)`;
-      }
     };
 
     const tick = () => {
@@ -61,24 +55,20 @@ const CustomCursor = () => {
       const target = e.target as HTMLElement | null;
       if (!target) return;
       const interactive = target.closest(
-        "a, button, [role='button'], input, textarea, [data-cursor]"
+        "a, button, [role='button'], input, textarea"
       ) as HTMLElement | null;
       if (interactive) {
-        const cursorLabel = interactive.getAttribute("data-cursor");
-        const variantAttr = interactive.getAttribute("data-cursor-variant");
-        if (variantAttr === "text") setVariant("text");
-        else setVariant("hover");
-        setLabel(cursorLabel ?? "");
+        if (interactive.tagName === "INPUT" || interactive.tagName === "TEXTAREA") {
+          setVariant("text");
+        } else {
+          setVariant("hover");
+        }
       } else {
         setVariant("default");
-        setLabel("");
       }
     };
 
-    const onLeave = () => {
-      setVariant("default");
-      setLabel("");
-    };
+    const onLeave = () => setVariant("default");
 
     window.addEventListener("mousemove", onMove);
     window.addEventListener("mouseover", onOver);
@@ -105,13 +95,6 @@ const CustomCursor = () => {
         }`}
         aria-hidden
       />
-      <div
-        ref={labelRef}
-        className={`cursor-label ${label ? "is-visible" : ""}`}
-        aria-hidden
-      >
-        {label}
-      </div>
     </>
   );
 };

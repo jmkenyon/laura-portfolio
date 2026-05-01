@@ -90,8 +90,8 @@ export default function ContactForm() {
                 required
                 name="name"
                 className="w-full bg-transparent border-b border-foreground/30 py-3 text-base outline-none focus:border-foreground transition-colors duration-300"
-                data-cursor="TYPE"
-                data-cursor-variant="text"
+
+
               />
             </label>
             <label className="block">
@@ -103,8 +103,8 @@ export default function ContactForm() {
                 required
                 name="email"
                 className="w-full bg-transparent border-b border-foreground/30 py-3 text-base outline-none focus:border-foreground transition-colors duration-300"
-                data-cursor="TYPE"
-                data-cursor-variant="text"
+
+
               />
             </label>
           </div>
@@ -118,15 +118,15 @@ export default function ContactForm() {
               required
               name="message"
               className="w-full bg-transparent border-b border-foreground/30 py-3 text-base outline-none focus:border-foreground transition-colors duration-300 resize-none"
-              data-cursor="TYPE"
-              data-cursor-variant="text"
+
+
             ></textarea>
           </label>
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
             <button
               type="submit"
-              data-cursor="SEND"
+
               className="group relative inline-flex items-center gap-3 py-4 px-8 border border-foreground rounded-full transition-colors duration-500 hover:bg-foreground hover:text-background"
             >
               <span className="font-display lowercase text-2xl tracking-tight">

@@ -10,7 +10,7 @@ const SocialIcons = () => {
         href="https://www.instagram.com/lauraconsoni.arq"
         target="_blank"
         rel="noopener noreferrer"
-        data-cursor="INSTA"
+
         className="text-foreground-muted hover:text-foreground transition-colors duration-300"
       >
         <PiInstagramLogoThin size={22} />
@@ -19,7 +19,7 @@ const SocialIcons = () => {
         href="https://www.linkedin.com/in/lauraconsoni/"
         target="_blank"
         rel="noopener noreferrer"
-        data-cursor="LINKEDIN"
+
         className="text-foreground-muted hover:text-foreground transition-colors duration-300"
       >
         <PiLinkedinLogoThin size={22} />

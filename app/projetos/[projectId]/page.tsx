@@ -46,7 +46,7 @@ const ProjectPage = () => {
       <div className="pt-12 md:pt-16 max-w-[1600px] mx-auto">
         <a
           href="/projetos"
-          data-cursor="BACK"
+
           className="label-mono text-foreground-muted link-underline inline-block mb-6"
         >
           ← index

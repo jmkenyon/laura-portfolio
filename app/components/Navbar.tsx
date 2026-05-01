@@ -34,7 +34,7 @@ const Navbar = ({ mode }: NavbarProps) => {
     >
       <div className="flex flex-row justify-between items-start">
         <div className="flex flex-col gap-1">
-          <Link href="/" data-cursor="HOME">
+          <Link href="/">
             <Image
               src="/logo.png"
               alt="Laura Consoni Logo"
@@ -48,14 +48,6 @@ const Navbar = ({ mode }: NavbarProps) => {
               fetchPriority="high"
             />
           </Link>
-          <span
-            className={cn(
-              "label-mono pl-1 mt-1",
-              mode === "dark" ? "text-white/60" : "text-foreground-muted"
-            )}
-          >
-            architect
-          </span>
         </div>
 
         <nav className="hidden sm:flex items-start gap-12 pb-4 text-right">
@@ -63,7 +55,7 @@ const Navbar = ({ mode }: NavbarProps) => {
             <Link
               key={link.href}
               href={link.href}
-              data-cursor="OPEN"
+
               className={cn(
                 "group flex items-baseline gap-2 link-underline",
                 isActive(link.href) && "is-active",
