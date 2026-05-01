@@ -5,15 +5,13 @@
       .fg { fill: #f4f1ec; }
     }
   </style>
-  <rect class="fg" x="13" y="5" width="6" height="6" transform="rotate(45 16 8)" />
-  <rect class="fg" x="2" y="22" width="28" height="1" opacity="0.4" />
   <text
     class="fg"
     x="16"
-    y="20"
+    y="24"
     text-anchor="middle"
     font-family="'Cormorant Garamond', Georgia, serif"
-    font-size="13"
+    font-size="22"
     font-weight="400"
     letter-spacing="-0.5"
   >l<tspan font-style="italic">c</tspan></text>
