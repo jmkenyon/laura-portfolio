@@ -4,7 +4,7 @@ import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 
 import { cn } from "../lib/utils";
-import Image from "next/image";
+import Logo from "./Logo";
 
 import { useTranslation } from "react-i18next";
 import { usePathname } from "next/navigation";
@@ -34,19 +34,8 @@ const Navbar = ({ mode }: NavbarProps) => {
     >
       <div className="flex flex-row justify-between items-start">
         <div className="flex flex-col gap-1">
-          <Link href="/">
-            <Image
-              src="/logo.png"
-              alt="Laura Consoni Logo"
-              width={120}
-              height={40}
-              className={cn(
-                "h-auto sm:w-40 w-32",
-                mode === "dark" && "invert brightness-200"
-              )}
-              priority
-              fetchPriority="high"
-            />
+          <Link href="/" aria-label="Laura Consoni — home">
+            <Logo className="sm:w-44 w-36" />
           </Link>
         </div>
 
