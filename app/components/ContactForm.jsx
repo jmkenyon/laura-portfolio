@@ -46,8 +46,7 @@ export default function ContactForm() {
             ◇ get in touch — for new commissions
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95] lowercase">
-            let&apos;s <em className="font-serif-italic">build</em>
-            <br /> something quiet.
+            get in <em className="font-serif-italic">touch</em>
           </h1>
         </div>
         <div className="md:col-span-4 md:text-right text-sm text-foreground-muted">
