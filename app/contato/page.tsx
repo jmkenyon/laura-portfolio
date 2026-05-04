@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 import Translate from "../components/Translate";
 import SocialIcons from "../components/SocialIcons";
+import Footer from "../components/Footer";
 
 const Page = () => {
   return (
@@ -12,10 +13,7 @@ const Page = () => {
       <Navbar />
       <ContactForm />
       <SocialIcons />
-      <footer className="mt-32 pt-10 border-t border-line label-mono text-foreground-muted flex justify-between max-w-[1600px] mx-auto">
-        <span>© laura consoni — 2026</span>
-        <span>são paulo · paris</span>
-      </footer>
+      <Footer />
     </div>
   );
 };

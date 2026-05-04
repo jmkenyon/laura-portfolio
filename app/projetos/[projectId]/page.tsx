@@ -5,11 +5,14 @@ import Navbar from "@/app/components/Navbar";
 import Translate from "@/app/components/Translate";
 import EmptyState from "@/app/components/EmptyState";
 import ProjectInfo from "@/app/components/ProjectInfo";
+import Footer from "@/app/components/Footer";
 import { useParams } from "next/navigation";
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 
 const ProjectPage = () => {
+  const { t } = useTranslation();
   const params = useParams();
   const projectData = useProjectData();
 
@@ -21,8 +24,8 @@ const ProjectPage = () => {
   if (!project) {
     return (
       <EmptyState
-        title="Projeto não encontrado"
-        subtitle="A projeto que você procura não existe ou foi removida"
+        title={t("projectNotFound")}
+        subtitle={t("projectNotFoundSubtitle")}
         navbar={true}
       />
     );
@@ -31,8 +34,8 @@ const ProjectPage = () => {
   if (project.embreve) {
     return (
       <EmptyState
-        title="em breve"
-        subtitle="conteúdo em desenvolvimento"
+        title={t("comingSoon")}
+        subtitle={t("comingSoonSubtitle")}
         navbar={true}
       />
     );
@@ -50,14 +53,11 @@ const ProjectPage = () => {
 
           className="label-mono text-foreground-muted link-underline inline-block mb-6"
         >
-          ← index
+          ← {t("indexLink")}
         </Link>
         <ProjectInfo project={project} />
       </div>
-      <footer className="mt-32 pt-10 border-t border-line label-mono text-foreground-muted flex justify-between max-w-[1600px] mx-auto">
-        <span>© laura consoni — 2026</span>
-        <span>são paulo · paris</span>
-      </footer>
+      <Footer />
     </div>
   );
 };

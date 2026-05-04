@@ -1,11 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import { memo } from "react";
 import { PiInstagramLogoThin, PiLinkedinLogoThin } from "react-icons/pi";
+import { useTranslation } from "react-i18next";
 
 const SocialIcons = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex gap-6 mt-16 mb-8 items-center">
-      <span className="label-mono text-foreground-muted">elsewhere —</span>
+      <span className="label-mono text-foreground-muted">{t("elsewhere")} —</span>
       <Link
         href="https://www.instagram.com/lauraconsoni.arq"
         target="_blank"

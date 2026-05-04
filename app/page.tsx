@@ -90,7 +90,7 @@ export default function Home() {
           <div className="max-w-[1600px] mx-auto w-full">
             <div className="label-mono mb-6 text-white/70">
               <MaskReveal delay={0.1}>
-                ESTÚDIO DE ARQUITETURA &nbsp; / &nbsp; SÃO PAULO — BRASIL
+                {t("heroEyebrow")}
               </MaskReveal>
             </div>
 
@@ -116,9 +116,7 @@ export default function Home() {
                 }}
                 className="text-sm font-light text-white/85 leading-relaxed col-span-2"
               >
-                Architecture, interiors and the spaces in between. A practice
-                exploring memory, materiality and the quiet poetry of inhabited
-                form.
+                {t("heroDescription")}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 14 }}

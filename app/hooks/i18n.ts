@@ -96,6 +96,29 @@ const resources = {
       worksDescription:
         "An evolving index of academic, professional and exploratory projects developed across São Paulo and Paris. Hover or tap a row to preview.",
       projectImagesLabel: "project — {{n}} images",
+      studioLabel: "studio",
+      studioCity: "são paulo, brasil",
+      coordsLabel: "coords",
+      hoursLabel: "hours",
+      hoursValue: "mon — fri / 9 — 18",
+      profileBio: "profile — biography",
+      aboutTagline:
+        "architect · interior designer · researcher of ruins and reuse",
+      heroEyebrow:
+        "ARCHITECTURE STUDIO  /  SÃO PAULO — BRAZIL",
+      heroDescription:
+        "Architecture, interiors and the spaces in between. A practice exploring memory, materiality and the quiet poetry of inhabited form.",
+      elsewhere: "elsewhere",
+      loading: "loading...",
+      indexLink: "index",
+      projectNotFound: "project not found",
+      projectNotFoundSubtitle:
+        "the project you're looking for doesn't exist or has been removed",
+      comingSoon: "coming soon",
+      comingSoonSubtitle: "content in development",
+      pageNotFound: "page not found",
+      pageNotFoundSubtitle:
+        "the page you're looking for doesn't exist or has been removed",
       project1_project: "competition",
       project1_team: "individual",
       project1_description1:
@@ -260,6 +283,29 @@ const resources = {
       worksDescription:
         "Um índice em evolução de projetos acadêmicos, profissionais e exploratórios desenvolvidos entre São Paulo e Paris. Passe o cursor ou toque em uma linha para visualizar.",
       projectImagesLabel: "projeto — {{n}} imagens",
+      studioLabel: "estúdio",
+      studioCity: "são paulo, brasil",
+      coordsLabel: "coordenadas",
+      hoursLabel: "horas",
+      hoursValue: "seg — sex / 9 — 18",
+      profileBio: "perfil — biografia",
+      aboutTagline:
+        "arquiteta · designer de interiores · pesquisadora de ruínas e reuso",
+      heroEyebrow:
+        "ESTÚDIO DE ARQUITETURA  /  SÃO PAULO — BRASIL",
+      heroDescription:
+        "Arquitetura, interiores e os espaços entre. Uma prática que explora memória, materialidade e a poesia silenciosa da forma habitada.",
+      elsewhere: "outros canais",
+      loading: "carregando...",
+      indexLink: "índice",
+      projectNotFound: "projeto não encontrado",
+      projectNotFoundSubtitle:
+        "o projeto que você procura não existe ou foi removido",
+      comingSoon: "em breve",
+      comingSoonSubtitle: "conteúdo em desenvolvimento",
+      pageNotFound: "página não encontrada",
+      pageNotFoundSubtitle:
+        "a página que você procura não existe ou foi removida",
 
       project1_project: "competição",
       project1_team: "individual",

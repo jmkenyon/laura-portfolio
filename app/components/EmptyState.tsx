@@ -4,6 +4,7 @@ import { memo } from "react";
 import { cn } from "../lib/utils";
 import Navbar from "./Navbar";
 import Translate from "./Translate";
+import { useTranslation } from "react-i18next";
 
 interface EmptyState {
   title?: string;
@@ -12,10 +13,13 @@ interface EmptyState {
 }
 
 const EmptyState: React.FC<EmptyState> = ({
-  title = "Página não encontrada",
-  subtitle = "A página que você procura não existe ou foi removida",
+  title,
+  subtitle,
   navbar = true,
 }) => {
+  const { t } = useTranslation();
+  const resolvedTitle = title ?? t("pageNotFound");
+  const resolvedSubtitle = subtitle ?? t("pageNotFoundSubtitle");
   return (
     <div
       className={cn(
@@ -33,9 +37,9 @@ const EmptyState: React.FC<EmptyState> = ({
       )}
 
       <div className="flex flex-col gap-4 justify-center items-start h-[60vh] max-w-[1400px] mx-auto">
-        <div className="label-mono text-foreground-muted">— {title}</div>
+        <div className="label-mono text-foreground-muted">— {resolvedTitle}</div>
         <h1 className="font-display text-5xl md:text-7xl tracking-tight lowercase leading-[0.95]">
-          {subtitle}
+          {resolvedSubtitle}
         </h1>
       </div>
     </div>

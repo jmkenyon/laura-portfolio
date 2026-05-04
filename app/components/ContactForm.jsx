@@ -56,16 +56,16 @@ export default function ContactForm() {
         {/* Sticky meta */}
         <div className="md:col-span-4 md:sticky md:top-32 md:self-start space-y-8">
           <div>
-            <div className="label-mono text-foreground-muted mb-2">studio</div>
-            <div className="text-sm">são paulo, brasil</div>
+            <div className="label-mono text-foreground-muted mb-2">{t("studioLabel")}</div>
+            <div className="text-sm">{t("studioCity")}</div>
           </div>
           <div>
-            <div className="label-mono text-foreground-muted mb-2">coords</div>
+            <div className="label-mono text-foreground-muted mb-2">{t("coordsLabel")}</div>
             <div className="text-sm font-mono">23.55° s · 46.63° w</div>
           </div>
           <div>
-            <div className="label-mono text-foreground-muted mb-2">hours</div>
-            <div className="text-sm">mon — fri / 9 — 18</div>
+            <div className="label-mono text-foreground-muted mb-2">{t("hoursLabel")}</div>
+            <div className="text-sm">{t("hoursValue")}</div>
           </div>
         </div>
 

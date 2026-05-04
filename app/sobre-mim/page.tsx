@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import Navbar from "../components/Navbar";
 import Translate from "../components/Translate";
 import Resume from "../components/Resume";
 import SocialIcons from "../components/SocialIcons";
 import AboutSection from "../components/AboutSection";
+import Footer from "../components/Footer";
 
 const Page = () => {
+  const { t } = useTranslation();
   return (
     <div className="px-6 sm:px-10 sm:py-10 py-13 bg-white text-foreground min-h-screen">
       <div className="hidden sm:block">
@@ -17,7 +22,7 @@ const Page = () => {
         <div className="grid md:grid-cols-12 gap-10 items-end pb-16 mb-2 border-b border-line">
           <div className="md:col-span-7">
             <div className="label-mono text-foreground-muted mb-3">
-              profile — biography
+              {t("profileBio")}
             </div>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95]">
               laura <em className="font-serif-italic">consoni</em>
@@ -25,7 +30,7 @@ const Page = () => {
           </div>
           <div className="md:col-span-5 md:text-right">
             <p className="text-sm text-foreground-muted max-w-md md:ml-auto">
-              architect · interior designer · researcher of ruins and reuse
+              {t("aboutTagline")}
             </p>
           </div>
         </div>
@@ -50,10 +55,7 @@ const Page = () => {
         <SocialIcons />
       </div>
 
-      <footer className="mt-32 pt-10 border-t border-line label-mono text-foreground-muted flex justify-between max-w-[1600px] mx-auto">
-        <span>© laura consoni — 2026</span>
-        <span>são paulo · paris</span>
-      </footer>
+      <Footer />
     </div>
   );
 };

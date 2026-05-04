@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Translate from "../components/Translate";
 import ProjectCard from "../components/ProjectCard";
+import Footer from "../components/Footer";
 
 const Page = () => {
   return (
@@ -12,10 +13,7 @@ const Page = () => {
       <div className="pt-16 md:pt-24 max-w-[1600px] mx-auto">
         <ProjectCard />
       </div>
-      <footer className="mt-32 pt-10 border-t border-line label-mono text-foreground-muted flex justify-between max-w-[1600px] mx-auto">
-        <span>© laura consoni — 2026</span>
-        <span>são paulo · paris</span>
-      </footer>
+      <Footer />
     </div>
   );
 };
