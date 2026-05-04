@@ -89,6 +89,13 @@ const resources = {
       project: "project",
       team: "team",
       year: "year",
+      type: "type",
+      selectedWorks: "selected",
+      selectedWorksItalic: "works",
+      worksIndexLabel: "index — {{n}} works",
+      worksDescription:
+        "An evolving index of academic, professional and exploratory projects developed across São Paulo and Paris. Hover or tap a row to preview.",
+      projectImagesLabel: "project — {{n}} images",
       project1_project: "competition",
       project1_team: "individual",
       project1_description1:
@@ -246,6 +253,13 @@ const resources = {
       project: "projeto",
       team: "equipe",
       year: "ano",
+      type: "tipo",
+      selectedWorks: "obras",
+      selectedWorksItalic: "selecionadas",
+      worksIndexLabel: "índice — {{n}} obras",
+      worksDescription:
+        "Um índice em evolução de projetos acadêmicos, profissionais e exploratórios desenvolvidos entre São Paulo e Paris. Passe o cursor ou toque em uma linha para visualizar.",
+      projectImagesLabel: "projeto — {{n}} imagens",
 
       project1_project: "competição",
       project1_team: "individual",

@@ -88,16 +88,18 @@ const ProjectCard = () => {
       >
         <div className="col-span-12 md:col-span-7">
           <div className="label-mono text-foreground-muted mb-3">
-            index — {projectData.length.toString().padStart(2, "0")} works
+            {t("worksIndexLabel", {
+              n: projectData.length.toString().padStart(2, "0"),
+            })}
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95]">
-            selected <em className="font-serif-italic">works</em>
+            {t("selectedWorks")}{" "}
+            <em className="font-serif-italic">{t("selectedWorksItalic")}</em>
           </h1>
         </div>
         <div className="col-span-12 md:col-span-5 md:text-right">
           <p className="text-sm text-foreground-muted max-w-md md:ml-auto">
-            An evolving index of academic, professional and exploratory projects
-            developed across São Paulo and Paris. Hover or tap a row to preview.
+            {t("worksDescription")}
           </p>
         </div>
       </motion.div>
@@ -105,9 +107,9 @@ const ProjectCard = () => {
       {/* Column headers */}
       <div className="hidden md:grid grid-cols-12 gap-4 label-mono text-foreground-muted py-3 border-b border-line">
         <div className="col-span-1">№</div>
-        <div className="col-span-5">title</div>
-        <div className="col-span-3">type</div>
-        <div className="col-span-2">year</div>
+        <div className="col-span-5">{t("title")}</div>
+        <div className="col-span-3">{t("type")}</div>
+        <div className="col-span-2">{t("year")}</div>
         <div className="col-span-1 text-right">→</div>
       </div>
 
