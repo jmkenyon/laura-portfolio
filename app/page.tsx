@@ -10,7 +10,7 @@ import MobileMenu from "./components/MobileMenu";
 
 const images: string[] = [
   "/background-image_3.webp",
-  "/background-image2_3.webp",
+  "/background-image2_4.webp",
   "/background-image3_3.webp",
 ];
 
